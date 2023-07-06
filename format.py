@@ -17,6 +17,8 @@ def main():
     for version in ['1.3-rc4', '1.2.40']:
         logger.info(f"Fallback 'en' strings: '{version}'")
         en_stings.fallback(Aseini.load(os.path.join(strings_dir, version, 'en.ini')))
+    logger.info(f"Mix 'en' strings")
+    en_stings.save(os.path.join(strings_dir, 'en.ini'))
 
     for file_name in os.listdir(data_dir):
         if not file_name.endswith('.ini'):
