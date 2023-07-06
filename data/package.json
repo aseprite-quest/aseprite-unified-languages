@@ -1,0 +1,20 @@
+{
+  "name": "unified-languages",
+  "displayName": "Unified Languages",
+  "description": "Aseprite extension to support multiple languages.",
+  "version": "0.0.0",
+  "author": { "name": "Aseprite Quest", "url": "https://github.com/aseprite-quest" },
+  "contributors": [
+    { "name": "TakWolf", "url": "https://takwolf.com" }
+  ],
+  "publisher": "Aseprite Quest",
+  "license": "CC-BY-4.0",
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "languages": [
+      { "id": "zh-cn", "path": "zh-cn.ini" }
+    ]
+  }
+}
