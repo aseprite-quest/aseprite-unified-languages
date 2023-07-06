@@ -48,7 +48,8 @@ class Aseini(UserDict[str, dict[str, str]]):
                     value = '\n'.join(buffer)
                 else:
                     value = tail
-                section[key] = value
+                if key not in section:
+                    section[key] = value
             else:
                 raise AssertionError(f'[line {line_num}]: token error.')
         return ini
