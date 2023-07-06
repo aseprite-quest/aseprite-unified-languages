@@ -26,9 +26,11 @@ class Aseini(UserDict[str, dict[str, str]]):
                 continue
             if line.startswith('[') and line.endswith(']'):
                 section_name = line.removeprefix('[').removesuffix(']').strip()
-                assert section_name not in ini, f"[line {line_num}]: section '{section_name}' already exists."
-                section = dict[str, str]()
-                ini[section_name] = section
+                if section_name in ini:
+                    section = ini[section_name]
+                else:
+                    section = dict[str, str]()
+                    ini[section_name] = section
             elif '=' in line:
                 assert section is not None, f'[line {line_num}]: no current section.'
                 tokens = line.split('=', 1)
