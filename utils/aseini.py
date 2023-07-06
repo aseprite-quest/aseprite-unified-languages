@@ -18,7 +18,9 @@ class Aseini(UserDict[str, dict[str, str]]):
 
         section = None
         lines_iterator = iter(lines)
-        for line_num, line in enumerate(lines_iterator):
+        line_num = 0
+        for line in lines_iterator:
+            line_num += 1
             line = line.strip()
             if line == '' or line.startswith('#'):
                 continue
@@ -36,6 +38,7 @@ class Aseini(UserDict[str, dict[str, str]]):
                     buffer = [tail]
                     tag = tail.removeprefix('<<<')
                     for value_line in lines_iterator:
+                        line_num += 1
                         if value_line.strip() == tag:
                             break
                         buffer.append(value_line.rstrip())
@@ -70,25 +73,45 @@ class Aseini(UserDict[str, dict[str, str]]):
                 if key not in section:
                     section[key] = value
 
-    def encode(self) -> list[str]:
+    def encode(self, source: 'Aseini' = None) -> list[str]:
+        if source is None:
+            source = self
+
         lines = list[str]()
         for header in self.headers:
             lines.append(f'# {header}')
         lines.append('')
-        for section_name, section in self.items():
+        for section_name, source_section in source.items():
             lines.append(f'[{section_name}]')
-            for key, value in section.items():
-                if value.startswith('<<<'):
-                    for index, value_line in enumerate(value.split('\n')):
-                        if index == 0:
-                            lines.append(f'{key} = {value_line}')
-                        else:
-                            lines.append(value_line)
+            for key, source_value in source_section.items():
+                value = None
+                if section_name in self and key in self[section_name]:
+                    value = self[section_name][key]
+                if source_value.startswith('<<<'):
+                    if value is None:
+                        lines.append('# TODO')
+                        for index, value_line in enumerate(source_value.split('\n')):
+                            if index == 0:
+                                lines.append(f'# {key} = {value_line}')
+                            else:
+                                lines.append(f'# {value_line}')
+                    else:
+                        assert value.startswith('<<<'), f"value type incorrect: '{section_name}.{key}'"
+                        for index, value_line in enumerate(value.split('\n')):
+                            if index == 0:
+                                lines.append(f'{key} = {value_line}')
+                            else:
+                                lines.append(value_line)
                 else:
-                    lines.append(f'{key} = {value}')
+                    if value is None:
+                        lines.append('# TODO')
+                        lines.append(f'# {key} = {source_value}')
+                    else:
+                        assert not value.startswith('<<<'), f"value type incorrect: '{section_name}.{key}'"
+                        lines.append(f'{key} = {value}')
             lines.append('')
         return lines
 
-    def save(self, file_path: str):
+    def save(self, file_path: str, source: 'Aseini' = None):
         with open(file_path, 'w', encoding='utf-8') as file:
-            file.write('\n'.join(self.encode()))
+            file.write('\n'.join(self.encode(source)))
