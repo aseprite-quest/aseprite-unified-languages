@@ -92,12 +92,11 @@ class Aseini(UserDict[str, dict[str, str]]):
                     value = self[section_name][key]
                 if source_value.startswith('<<<'):
                     if value is None:
-                        lines.append('# TODO')
                         for index, value_line in enumerate(source_value.split('\n')):
                             if index == 0:
-                                lines.append(f'# {key} = {value_line}')
+                                lines.append(f'# TODO # {key} = {value_line}')
                             else:
-                                lines.append(f'# {value_line}')
+                                lines.append(f'# TODO # {value_line}')
                     else:
                         assert value.startswith('<<<'), f"value type incorrect: '{section_name}.{key}'"
                         for index, value_line in enumerate(value.split('\n')):
@@ -107,8 +106,7 @@ class Aseini(UserDict[str, dict[str, str]]):
                                 lines.append(value_line)
                 else:
                     if value is None:
-                        lines.append('# TODO')
-                        lines.append(f'# {key} = {source_value}')
+                        lines.append(f'# TODO # {key} = {source_value}')
                     else:
                         assert not value.startswith('<<<'), f"value type incorrect: '{section_name}.{key}'"
                         lines.append(f'{key} = {value}')
