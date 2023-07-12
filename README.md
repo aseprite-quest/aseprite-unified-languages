@@ -6,7 +6,9 @@
 
 ## Supported languages
 
-TODO
+| Name | File | Count | Missing | Progress |
+|---|---|---:|---:|---:|
+| Simplified Chinese | [zh-cn.ini](data/zh-cn.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
 
 ## Credits
 
