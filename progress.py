@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 
@@ -6,26 +7,28 @@ from utils.aseini import Aseini
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('progress')
 
-lang_names = {
-    'zh-chs.ini': 'Simplified Chinese',
-    'zh-cht.ini': 'Traditional Chinese',
-    'ja.ini': 'Japanese',
-    'ko.ini': 'Korean',
-}
-
 project_root_dir = os.path.dirname(__file__)
 strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
 data_dir = os.path.join(project_root_dir, 'data')
 
 
 def main():
+    package_json_file_path = os.path.join(data_dir, 'package.json')
+    with open(package_json_file_path, 'r', encoding='utf-8') as file:
+        languages: list[dict[str, str]] = json.loads(file.read())['contributes']['languages']
+
     logger.info(f"Load 'en' strings")
     en_stings = Aseini.load(os.path.join(strings_dir, 'en.ini'))
 
-    infos = {}
-    for file_name in os.listdir(data_dir):
-        if not file_name.endswith('.ini'):
-            continue
+    info_lines = [
+        '',
+        '| English Name | Display Name | File | Count | Missing | Progress |',
+        '|---|---|---|---:|---:|---:|',
+    ]
+    for language in languages:
+        english_name = language['englishName']
+        display_name = language['displayName']
+        file_name = language['path'].removeprefix('./')
         logger.info(f"Load strings: '{file_name}'")
         lang_strings = Aseini.load(os.path.join(data_dir, file_name))
         total = 0
@@ -35,23 +38,13 @@ def main():
                 total += 1
                 if section_name in lang_strings and key in lang_strings[section_name]:
                     count += 1
-        infos[file_name] = count, total
-
-    info_lines = [
-        '',
-        '| Name | File | Count | Missing | Progress |',
-        '|---|---|---:|---:|---:|',
-    ]
-    for file_name, lang_name in lang_names.items():
-        count, total = infos[file_name]
         missing = total - count
         progress = count / total
         finished_emoji = '🚩' if progress == 1 else '🚧'
-        info_lines.append(f'| {lang_name} | [{file_name}](data/{file_name}) | {count} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
+        info_lines.append(f'| {english_name} | {display_name} | [{file_name}](data/{file_name}) | {count} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
     info_lines.append('')
 
     readme_file_path = os.path.join(project_root_dir, 'README.md')
-
     front_lines = []
     back_lines = []
     with open(readme_file_path, 'r', encoding='utf-8') as file:
@@ -66,7 +59,6 @@ def main():
                 current_lines.append(line)
             elif current_lines is not None:
                 current_lines.append(line)
-
     with open(readme_file_path, 'w', encoding='utf-8') as file:
         file.write('\n'.join(front_lines + info_lines + back_lines))
         file.write('\n')

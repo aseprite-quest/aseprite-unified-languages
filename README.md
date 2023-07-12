@@ -6,12 +6,12 @@
 
 ## Supported languages
 
-| Name | File | Count | Missing | Progress |
-|---|---|---:|---:|---:|
-| Simplified Chinese | [zh-chs.ini](data/zh-chs.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
-| Traditional Chinese | [zh-cht.ini](data/zh-cht.ini) | 922 / 1587 | 665 | 58.10% 🚧 |
-| Japanese | [ja.ini](data/ja.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
-| Korean | [ko.ini](data/ko.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
+| English Name | Display Name | File | Count | Missing | Progress |
+|---|---|---|---:|---:|---:|
+| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
+| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 922 / 1587 | 665 | 58.10% 🚧 |
+| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
+| Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
 
 ## References
 

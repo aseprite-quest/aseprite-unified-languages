@@ -3,9 +3,15 @@
   "displayName": "Unified Languages",
   "description": "Aseprite extension to support multiple languages.",
   "version": "0.0.0",
-  "author": { "name": "Aseprite Quest", "url": "https://github.com/aseprite-quest" },
+  "author": {
+    "name": "Aseprite Quest",
+    "url": "https://github.com/aseprite-quest"
+  },
   "contributors": [
-    { "name": "TakWolf", "url": "https://takwolf.com" }
+    {
+      "name": "TakWolf",
+      "url": "https://takwolf.com"
+    }
   ],
   "publisher": "Aseprite Quest",
   "license": "CC-BY-4.0",
@@ -14,10 +20,30 @@
   ],
   "contributes": {
     "languages": [
-      { "id": "zh-chs", "path": "zh-chs.ini" },
-      { "id": "zh-cht", "path": "zh-cht.ini" },
-      { "id": "ja", "path": "ja.ini" },
-      { "id": "ko", "path": "ko.ini" }
+      {
+        "id": "zh-Hans",
+        "path": "./zh-hans.ini",
+        "englishName": "Chinese (Simplified)",
+        "displayName": "中文（简体）"
+      },
+      {
+        "id": "zh-Hant",
+        "path": "./zh-hant.ini",
+        "englishName": "Chinese (Traditional)",
+        "displayName": "中文（繁體）"
+      },
+      {
+        "id": "ja",
+        "path": "./ja.ini",
+        "englishName": "Japanese",
+        "displayName": "日本語"
+      },
+      {
+        "id": "ko",
+        "path": "./ko.ini",
+        "englishName": "Korean",
+        "displayName": "한국어"
+      }
     ]
   }
 }
