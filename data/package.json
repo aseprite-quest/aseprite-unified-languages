@@ -14,7 +14,9 @@
   ],
   "contributes": {
     "languages": [
-      { "id": "zh-cn", "path": "zh-cn.ini" }
+      { "id": "zh-cn", "path": "zh-cn.ini" },
+      { "id": "zh-tr", "path": "zh-tr.ini" },
+      { "id": "ja", "path": "ja.ini" }
     ]
   }
 }

@@ -5,6 +5,8 @@ from utils.aseini import Aseini
 
 lang_names = {
     'zh-cn.ini': 'Simplified Chinese',
+    'zh-tr.ini': 'Traditional Chinese',
+    'ja.ini': 'Japanese',
 }
 
 project_root_dir = os.path.dirname(__file__)
