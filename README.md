@@ -15,6 +15,7 @@
 
 ## References
 
+- [Aseprite Docs - Extensions - Languages](https://aseprite.org/docs/extensions/languages)
 - [Simplified Chinese](https://github.com/J-11/Aseprite-Simplified-Chinese)
 - [Traditional Chinese](https://github.com/chongx1an/Aseprite-TraditionalChineseExtension)
 - [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
