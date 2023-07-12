@@ -3,12 +3,12 @@ import os
 
 from utils.aseini import Aseini
 
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('format')
+
 project_root_dir = os.path.dirname(__file__)
 strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
 data_dir = os.path.join(project_root_dir, 'data')
-
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('format')
 
 
 def main():

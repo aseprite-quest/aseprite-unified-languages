@@ -3,6 +3,9 @@ import os
 
 from utils.aseini import Aseini
 
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger('progress')
+
 lang_names = {
     'zh-chs.ini': 'Simplified Chinese',
     'zh-cht.ini': 'Traditional Chinese',
@@ -13,9 +16,6 @@ lang_names = {
 project_root_dir = os.path.dirname(__file__)
 strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
 data_dir = os.path.join(project_root_dir, 'data')
-
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger('progress')
 
 
 def main():
