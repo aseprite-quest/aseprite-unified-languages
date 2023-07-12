@@ -16,7 +16,8 @@
     "languages": [
       { "id": "zh-chs", "path": "zh-chs.ini" },
       { "id": "zh-cht", "path": "zh-cht.ini" },
-      { "id": "ja", "path": "ja.ini" }
+      { "id": "ja", "path": "ja.ini" },
+      { "id": "ko", "path": "ko.ini" }
     ]
   }
 }

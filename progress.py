@@ -7,6 +7,7 @@ lang_names = {
     'zh-chs.ini': 'Simplified Chinese',
     'zh-cht.ini': 'Traditional Chinese',
     'ja.ini': 'Japanese',
+    'ko.ini': 'Korean',
 }
 
 project_root_dir = os.path.dirname(__file__)
