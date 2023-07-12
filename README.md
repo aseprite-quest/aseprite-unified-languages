@@ -23,6 +23,6 @@
 
 ## License
 
-Translations under the [Creative Commons Attribution 4.0 International License](data/package.json).
+Translations under the [Creative Commons Attribution 4.0 International License](data/LICENSE.txt).
 
 Scripts under the [MIT License](LICENSE).
