@@ -4,8 +4,8 @@ import os
 from utils.aseini import Aseini
 
 lang_names = {
-    'zh-cn.ini': 'Simplified Chinese',
-    'zh-tr.ini': 'Traditional Chinese',
+    'zh-chs.ini': 'Simplified Chinese',
+    'zh-cht.ini': 'Traditional Chinese',
     'ja.ini': 'Japanese',
 }
 

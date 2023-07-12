@@ -8,8 +8,8 @@
 
 | Name | File | Count | Missing | Progress |
 |---|---|---:|---:|---:|
-| Simplified Chinese | [zh-cn.ini](data/zh-cn.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
-| Traditional Chinese | [zh-tr.ini](data/zh-tr.ini) | 922 / 1587 | 665 | 58.10% 🚧 |
+| Simplified Chinese | [zh-chs.ini](data/zh-chs.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
+| Traditional Chinese | [zh-cht.ini](data/zh-cht.ini) | 922 / 1587 | 665 | 58.10% 🚧 |
 | Japanese | [ja.ini](data/ja.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
 
 ## References
