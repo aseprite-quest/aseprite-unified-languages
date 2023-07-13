@@ -16,6 +16,8 @@
 ## References
 
 - [Aseprite Docs - Extensions - Languages](https://aseprite.org/docs/extensions/languages)
+- [Letter codes of cultures (languages, countries / regions) - list](https://www.venea.net/web/culture_code)
+- [MDN - CSS pseudo-class - :lang()](https://developer.mozilla.org/en-US/docs/Web/CSS/:lang)
 - [Simplified Chinese](https://github.com/J-11/Aseprite-Simplified-Chinese)
 - [Traditional Chinese](https://github.com/chongx1an/Aseprite-TraditionalChineseExtension)
 - [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
