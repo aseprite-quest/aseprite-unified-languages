@@ -43,6 +43,12 @@
         "path": "./ko.ini",
         "englishName": "Korean",
         "displayName": "한국어"
+      },
+      {
+        "id": "ru",
+        "path": "./ru.ini",
+        "englishName": "Russian",
+        "displayName": "Русский"
       }
     ]
   }
