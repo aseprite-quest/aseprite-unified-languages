@@ -1,5 +1,6 @@
 import logging
 import os
+import shutil
 
 from utils.aseini import Aseini
 
@@ -9,9 +10,14 @@ logger = logging.getLogger('format')
 project_root_dir = os.path.dirname(__file__)
 strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
 data_dir = os.path.join(project_root_dir, 'data')
+alphabets_dir = os.path.join(project_root_dir, 'build', 'alphabets')
 
 
 def main():
+    if os.path.exists(alphabets_dir):
+        shutil.rmtree(alphabets_dir)
+    os.makedirs(alphabets_dir)
+
     logger.info(f"Load 'en' strings: 'main'")
     en_stings = Aseini.load(os.path.join(strings_dir, 'main', 'en.ini'))
     for version in ['1.3-rc4', '1.2.40']:
@@ -19,6 +25,8 @@ def main():
         en_stings.fallback(Aseini.load(os.path.join(strings_dir, version, 'en.ini')))
     logger.info(f"Mix 'en' strings")
     en_stings.save(os.path.join(strings_dir, 'en.ini'))
+    logger.info(f"Dump alphabet: 'en.txt'")
+    en_stings.save_alphabet(os.path.join(alphabets_dir, 'en.txt'))
 
     for file_name in os.listdir(data_dir):
         if not file_name.endswith('.ini'):
@@ -27,6 +35,9 @@ def main():
         logger.info(f"Format strings: '{file_name}'")
         lang_strings = Aseini.load(file_path)
         lang_strings.save(file_path, en_stings)
+        alphabet_file_name = f"{file_name.removesuffix('.ini')}.txt"
+        logger.info(f"Dump alphabet: '{alphabet_file_name}'")
+        lang_strings.save_alphabet(os.path.join(alphabets_dir, alphabet_file_name))
 
 
 if __name__ == '__main__':

@@ -116,3 +116,20 @@ class Aseini(UserDict[str, dict[str, str]]):
     def save(self, file_path: str, source: 'Aseini' = None):
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write('\n'.join(self.encode(source)))
+
+    def collect_alphabet(self) -> set[str]:
+        alphabet = set()
+        for section in self.values():
+            for value in section.values():
+                if value.startswith('<<<'):
+                    tag = value.split('\n')[0].removeprefix('<<<')
+                    value = value.removeprefix(f'<<<{tag}').removesuffix(tag).replace('\n', '')
+                for c in value:
+                    alphabet.add(c)
+        return alphabet
+
+    def save_alphabet(self, file_path: str):
+        with open(file_path, 'w', encoding='utf-8') as file:
+            alphabet = list(self.collect_alphabet())
+            alphabet.sort()
+            file.write(''.join(alphabet))
