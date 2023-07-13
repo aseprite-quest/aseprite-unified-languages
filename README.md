@@ -13,6 +13,7 @@
 | Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
 | Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1587 | 388 | 75.55% 🚧 |
 | Russian | Русский | [ru.ini](data/ru.ini) | 1578 / 1587 | 9 | 99.43% 🚧 |
+| Italian | Italiano | [it.ini](data/it.ini) | 1191 / 1587 | 396 | 75.05% 🚧 |
 
 ## References
 
@@ -24,6 +25,7 @@
 - [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
 - [Korean](https://github.com/ImBada/Aseprite-Korean)
 - [Russian](https://github.com/lufog/aseprite-language-russian)
+- [Italian](https://github.com/FabianoIlCapo/aseprite_italian)
 
 ## License
 

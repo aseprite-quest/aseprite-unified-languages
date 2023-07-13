@@ -49,6 +49,12 @@
         "path": "./ru.ini",
         "englishName": "Russian",
         "displayName": "Русский"
+      },
+      {
+        "id": "it",
+        "path": "./it.ini",
+        "englishName": "Italian",
+        "displayName": "Italiano"
       }
     ]
   }
