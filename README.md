@@ -8,7 +8,7 @@
 
 ## Supported languages
 
-| English Name | Display Name | File | Count | Missing | Progress |
+| English Name | Display Name | File | Translated | Missing | Progress |
 |---|---|---|---:|---:|---:|
 | Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1587 / 1587 | 0 | 100.00% 🚩 |
 | Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 922 / 1587 | 665 | 58.10% 🚧 |
@@ -30,6 +30,10 @@ All the localized files are in the [data](data) directory, named with [IETF lang
 The contents are corresponding with the default language English [`assets/strings/en.ini`](assets/strings/en.ini).
 
 Translate these files and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to this repository.
+
+## Dependencies
+
+- [Aseprite INI](https://github.com/aseprite-quest/aseprite-ini)
 
 ## References
 

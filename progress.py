@@ -2,7 +2,7 @@ import json
 import logging
 import os
 
-from utils.aseini import Aseini
+from aseprite_ini import Aseini
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('progress')
@@ -18,11 +18,11 @@ def main():
         languages: list[dict[str, str]] = json.loads(file.read())['contributes']['languages']
 
     logger.info(f"Load 'en' strings")
-    en_stings = Aseini.load(os.path.join(strings_dir, 'en.ini'))
+    strings_en = Aseini.load(os.path.join(strings_dir, 'en.ini'))
 
     info_lines = [
         '',
-        '| English Name | Display Name | File | Count | Missing | Progress |',
+        '| English Name | Display Name | File | Translated | Missing | Progress |',
         '|---|---|---|---:|---:|---:|',
     ]
     for language in languages:
@@ -30,18 +30,12 @@ def main():
         display_name = language['displayName']
         file_name = language['path'].removeprefix('./')
         logger.info(f"Load strings: '{file_name}'")
-        lang_strings = Aseini.load(os.path.join(data_dir, file_name))
-        total = 0
-        count = 0
-        for section_name, section in en_stings.items():
-            for key in section:
-                total += 1
-                if section_name in lang_strings and key in lang_strings[section_name]:
-                    count += 1
-        missing = total - count
-        progress = count / total
+        strings_lang = Aseini.load(os.path.join(data_dir, file_name))
+        translated, total = strings_lang.coverage(strings_en)
+        missing = total - translated
+        progress = translated / total
         finished_emoji = '🚩' if progress == 1 else '🚧'
-        info_lines.append(f'| {english_name} | {display_name} | [{file_name}](data/{file_name}) | {count} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
+        info_lines.append(f'| {english_name} | {display_name} | [{file_name}](data/{file_name}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
     info_lines.append('')
 
     readme_file_path = os.path.join(project_root_dir, 'README.md')
