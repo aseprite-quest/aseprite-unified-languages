@@ -4,6 +4,8 @@
 
 [Aseprite](https://github.com/aseprite/aseprite) extension to support multiple languages.
 
+![product](docs/product.png)
+
 ## Supported languages
 
 | English Name | Display Name | File | Count | Missing | Progress |
@@ -15,9 +17,24 @@
 | Russian | Русский | [ru.ini](data/ru.ini) | 1578 / 1587 | 9 | 99.43% 🚧 |
 | Italian | Italiano | [it.ini](data/it.ini) | 1191 / 1587 | 396 | 75.05% 🚧 |
 
+## Usage
+
+Download the latest version `.aseprite-extension` file in the [Releases](https://github.com/aseprite-quest/aseprite-unified-languages-extension/releases), and then follow the [Documentation](https://www.aseprite.org/docs/extensions/) to install it.
+
+## How to contribute
+
+This extension follows the [Aseprite Language Extension Specification](https://www.aseprite.org/docs/extensions/languages/).
+
+All the localized files are in the [data](data) directory, named with [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) `.ini`.
+
+The contents are corresponding with the default language English [`assets/strings/en.ini`](assets/strings/en.ini).
+
+Translate these files and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to this repository.
+
 ## References
 
 - [Aseprite Docs - Extensions - Languages](https://aseprite.org/docs/extensions/languages)
+- [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag)
 - [Letter codes of cultures (languages, countries / regions) - list](https://www.venea.net/web/culture_code)
 - [MDN - CSS pseudo-class - :lang()](https://developer.mozilla.org/en-US/docs/Web/CSS/:lang)
 - [Simplified Chinese](https://github.com/J-11/Aseprite-Simplified-Chinese)
@@ -29,6 +46,6 @@
 
 ## License
 
-Translations under the [Creative Commons Attribution 4.0 International License](data/LICENSE.txt).
+Translations are under the [Creative Commons Attribution 4.0 International License](data/LICENSE.txt).
 
-Scripts under the [MIT License](LICENSE).
+Scripts are under the [MIT License](LICENSE).
