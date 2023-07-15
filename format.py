@@ -19,14 +19,14 @@ def main():
     os.makedirs(alphabets_dir)
 
     logger.info(f"Load 'en' strings: 'main'")
-    stings_en = Aseini.pull_strings()
+    strings_en = Aseini.pull_strings()
     for version in ['1.3-rc4', '1.2.40']:
         logger.info(f"Fallback 'en' strings: '{version}'")
-        stings_en.fallback(Aseini.pull_strings(f'v{version}'))
+        strings_en.fallback(Aseini.pull_strings(f'v{version}'))
     logger.info(f"Mix 'en' strings")
-    stings_en.save(os.path.join(strings_dir, 'en.ini'))
+    strings_en.save(os.path.join(strings_dir, 'en.ini'))
     logger.info(f"Dump alphabet: 'en.txt'")
-    stings_en.save_alphabet(os.path.join(alphabets_dir, 'en.txt'))
+    strings_en.save_alphabet(os.path.join(alphabets_dir, 'en.txt'))
 
     for file_name in os.listdir(data_dir):
         if not file_name.endswith('.ini'):
@@ -34,7 +34,7 @@ def main():
         file_path = os.path.join(data_dir, file_name)
         logger.info(f"Format strings: '{file_name}'")
         strings_lang = Aseini.load(file_path)
-        strings_lang.save(file_path, stings_en)
+        strings_lang.save(file_path, strings_en)
         alphabet_file_name = f"{file_name.removesuffix('.ini')}.txt"
         logger.info(f"Dump alphabet: '{alphabet_file_name}'")
         strings_lang.save_alphabet(os.path.join(alphabets_dir, alphabet_file_name))
