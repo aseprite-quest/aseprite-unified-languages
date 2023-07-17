@@ -17,7 +17,7 @@ def main():
     with open(package_json_file_path, 'r', encoding='utf-8') as file:
         languages: list[dict[str, str]] = json.loads(file.read())['contributes']['languages']
 
-    logger.info(f"Load 'en' strings")
+    logger.info(f"Load strings: 'en.ini'")
     strings_en = Aseini.load(os.path.join(strings_dir, 'en.ini'))
 
     info_lines = [
