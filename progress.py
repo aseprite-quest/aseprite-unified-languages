@@ -39,8 +39,8 @@ def main():
     info_lines.append('')
 
     readme_file_path = os.path.join(project_root_dir, 'README.md')
-    front_lines = []
-    back_lines = []
+    front_lines: list[str] = []
+    back_lines: list[str] = []
     with open(readme_file_path, 'r', encoding='utf-8') as file:
         current_lines = front_lines
         for line in file.readlines():
