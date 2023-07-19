@@ -20,7 +20,7 @@ def main():
 
     logger.info(f"Pull 'en' strings: 'main'")
     strings_en = Aseini.pull_strings()
-    for version in ['1.3-rc4', '1.2.40']:
+    for version in ['1.3-rc5', '1.2.40']:
         logger.info(f"Fallback 'en' strings: '{version}'")
         strings_en.fallback(Aseini.pull_strings(f'v{version}'))
     logger.info(f"Update strings: 'en.ini'")
