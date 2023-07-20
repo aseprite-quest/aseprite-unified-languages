@@ -1,6 +1,6 @@
-# Aseprite Unified Languages Extension
+# Aseprite Unified Languages
 
-[![Releases](https://img.shields.io/github/v/release/aseprite-quest/aseprite-unified-languages-extension)](https://github.com/aseprite-quest/aseprite-unified-languages-extension/releases)
+[![Releases](https://img.shields.io/github/v/release/aseprite-quest/aseprite-unified-languages)](https://github.com/aseprite-quest/aseprite-unified-languages/releases)
 
 [Aseprite](https://github.com/aseprite/aseprite) extension to support multiple languages.
 
@@ -19,7 +19,7 @@
 
 ## Usage
 
-Download the latest version `.aseprite-extension` file in the [Releases](https://github.com/aseprite-quest/aseprite-unified-languages-extension/releases), and then follow the [Documentation](https://www.aseprite.org/docs/extensions/) to install it.
+Download the latest version `.aseprite-extension` file in the [Releases](https://github.com/aseprite-quest/aseprite-unified-languages/releases), and then follow the [Documentation](https://www.aseprite.org/docs/extensions/) to install it.
 
 ## How to contribute
 

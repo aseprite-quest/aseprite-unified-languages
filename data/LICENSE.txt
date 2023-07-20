@@ -1,6 +1,6 @@
 Aseprite Unified Languages Extension
 
-https://github.com/aseprite-quest/aseprite-unified-languages-extension
+https://github.com/aseprite-quest/aseprite-unified-languages
 
 This work is licensed under the Creative Commons Attribution 4.0
 International License. To view a copy of this license, visit
