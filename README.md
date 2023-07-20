@@ -15,7 +15,7 @@
 | Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
 | Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
 | Russian | Русский | [ru.ini](data/ru.ini) | 1578 / 1598 | 20 | 98.75% 🚧 |
-| Italian | Italiano | [it.ini](data/it.ini) | 1587 / 1598 | 11 | 99.31% 🚧 |
+| Italian | Italiano | [it.ini](data/it.ini) | 1598 / 1598 | 0 | 100.00% 🚩 |
 
 ## Usage
 
