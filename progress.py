@@ -17,8 +17,8 @@ def main():
     with open(package_json_file_path, 'r', encoding='utf-8') as file:
         languages: list[dict[str, str]] = json.loads(file.read())['contributes']['languages']
 
-    logger.info("Load strings: 'en.ini'")
     strings_en = Aseini.load(os.path.join(strings_dir, 'en.ini'))
+    logger.info("Load strings: 'en.ini'")
 
     info_lines = [
         '',
@@ -29,8 +29,8 @@ def main():
         english_name = language['englishName']
         display_name = language['displayName']
         file_name = language['path'].removeprefix('./')
-        logger.info("Load strings: '%s'", file_name)
         strings_lang = Aseini.load(os.path.join(data_dir, file_name))
+        logger.info("Load strings: '%s'", file_name)
         translated, total = strings_lang.coverage(strings_en)
         missing = total - translated
         progress = translated / total
