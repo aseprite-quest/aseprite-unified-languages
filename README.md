@@ -21,15 +21,11 @@
 
 Download the latest version `.aseprite-extension` file in the [Releases](https://github.com/aseprite-quest/aseprite-unified-languages/releases), and then follow the [Documentation](https://www.aseprite.org/docs/extensions/) to install it.
 
-## How to contribute
+## Sync source repositories
 
-This extension follows the [Aseprite Language Extension Specification](https://www.aseprite.org/docs/extensions/languages/).
-
-All the localized files are in the [data](data) directory, named with [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) `.ini`.
-
-The contents are corresponding with the default language English [`assets/strings/en.ini`](assets/strings/en.ini).
-
-Translate these files and [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to this repository.
+- [Chinese (Simplified)](https://github.com/aseprite-quest/aseprite-language-chinese-simplified)
+- [Russian](https://github.com/lufog/aseprite-language-russian)
+- [Italian](https://github.com/FabianoIlCapo/aseprite_italian)
 
 ## Dependencies
 
