@@ -14,7 +14,7 @@
 | Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1175 / 1598 | 423 | 73.53% 🚧 |
 | Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
 | Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
-| Russian | Русский | [ru.ini](data/ru.ini) | 1591 / 1598 | 7 | 99.56% 🚧 |
+| Russian | Русский | [ru.ini](data/ru.ini) | 1593 / 1598 | 5 | 99.69% 🚧 |
 | Italian | Italiano | [it.ini](data/it.ini) | 1598 / 1598 | 0 | 100.00% 🚩 |
 
 ## Usage
