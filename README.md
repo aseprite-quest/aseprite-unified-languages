@@ -17,18 +17,21 @@
 | Russian | Русский | [ru.ini](data/ru.ini) | 1593 / 1616 | 23 | 98.58% 🚧 |
 | Italian | italiano | [it.ini](data/it.ini) | 1598 / 1616 | 18 | 98.89% 🚧 |
 
-## Usage
+## Source repositories
 
-Download the latest version `.aseprite-extension` file in the [Releases](https://github.com/aseprite-quest/aseprite-unified-languages/releases), and then follow the [Documentation](https://www.aseprite.org/docs/extensions/) to install it.
-
-## Sync source repositories
+### Synchronous
 
 - [Chinese (Simplified)](https://github.com/aseprite-quest/aseprite-language-chinese-simplified)
 - [Chinese (Traditional)](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation)
 - [Russian](https://github.com/lufog/aseprite-language-russian)
 - [Italian](https://github.com/FabianoIlCapo/aseprite_italian)
 
-## Dependencies
+### Others
+
+- [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
+- [Korean](https://github.com/ImBada/Aseprite-Korean)
+
+## Tools
 
 - [Aseprite INI](https://github.com/aseprite-quest/aseprite-ini)
 
@@ -38,12 +41,6 @@ Download the latest version `.aseprite-extension` file in the [Releases](https:/
 - [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag)
 - [Letter codes of cultures (languages, countries / regions) - list](https://www.venea.net/web/culture_code)
 - [MDN - CSS pseudo-class - :lang()](https://developer.mozilla.org/en-US/docs/Web/CSS/:lang)
-- [Chinese (Simplified)](https://github.com/J-11/Aseprite-Simplified-Chinese)
-- [Chinese (Traditional)](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation)
-- [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
-- [Korean](https://github.com/ImBada/Aseprite-Korean)
-- [Russian](https://github.com/lufog/aseprite-language-russian)
-- [Italian](https://github.com/FabianoIlCapo/aseprite_italian)
 
 ## License
 
