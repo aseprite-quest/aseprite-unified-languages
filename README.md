@@ -10,12 +10,12 @@
 
 | English Name | Display Name | File | Translated | Missing | Progress |
 |---|---|---|---:|---:|---:|
-| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1587 / 1598 | 11 | 99.31% 🚧 |
-| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1598 / 1598 | 0 | 100.00% 🚩 |
-| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
-| Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1598 | 399 | 75.03% 🚧 |
-| Russian | Русский | [ru.ini](data/ru.ini) | 1593 / 1598 | 5 | 99.69% 🚧 |
-| Italian | italiano | [it.ini](data/it.ini) | 1598 / 1598 | 0 | 100.00% 🚩 |
+| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1587 / 1616 | 29 | 98.21% 🚧 |
+| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1598 / 1616 | 18 | 98.89% 🚧 |
+| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1616 | 417 | 74.20% 🚧 |
+| Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1616 | 417 | 74.20% 🚧 |
+| Russian | Русский | [ru.ini](data/ru.ini) | 1593 / 1616 | 23 | 98.58% 🚧 |
+| Italian | italiano | [it.ini](data/it.ini) | 1598 / 1616 | 18 | 98.89% 🚧 |
 
 ## Usage
 
