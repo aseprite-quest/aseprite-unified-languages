@@ -14,7 +14,7 @@
 | Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1598 / 1617 | 19 | 98.82% 🚧 |
 | Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1617 | 418 | 74.15% 🚧 |
 | Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1617 | 418 | 74.15% 🚧 |
-| Russian | Русский | [ru.ini](data/ru.ini) | 1593 / 1617 | 24 | 98.52% 🚧 |
+| Russian | Русский | [ru.ini](data/ru.ini) | 1612 / 1617 | 5 | 99.69% 🚧 |
 | Italian | italiano | [it.ini](data/it.ini) | 1598 / 1617 | 19 | 98.82% 🚧 |
 
 ## Source repositories
