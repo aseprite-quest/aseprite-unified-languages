@@ -10,12 +10,12 @@
 
 | English Name | Display Name | File | Translated | Missing | Progress |
 |---|---|---|---:|---:|---:|
-| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1587 / 1617 | 30 | 98.14% 🚧 |
-| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1598 / 1617 | 19 | 98.82% 🚧 |
-| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1199 / 1617 | 418 | 74.15% 🚧 |
-| Korean | 한국어 | [ko.ini](data/ko.ini) | 1199 / 1617 | 418 | 74.15% 🚧 |
-| Russian | Русский | [ru.ini](data/ru.ini) | 1612 / 1617 | 5 | 99.69% 🚧 |
-| Italian | italiano | [it.ini](data/it.ini) | 1598 / 1617 | 19 | 98.82% 🚧 |
+| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1582 / 1612 | 30 | 98.14% 🚧 |
+| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1593 / 1612 | 19 | 98.82% 🚧 |
+| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1194 / 1612 | 418 | 74.07% 🚧 |
+| Korean | 한국어 | [ko.ini](data/ko.ini) | 1194 / 1612 | 418 | 74.07% 🚧 |
+| Russian | Русский | [ru.ini](data/ru.ini) | 1611 / 1612 | 1 | 99.94% 🚧 |
+| Italian | italiano | [it.ini](data/it.ini) | 1593 / 1612 | 19 | 98.82% 🚧 |
 
 ## Source repositories
 
