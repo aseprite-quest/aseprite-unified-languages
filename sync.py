@@ -12,9 +12,12 @@ data_dir = os.path.join(project_root_dir, 'data')
 
 sync_configs = {
     'zh-hans.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-chinese-simplified/master/data/zh-hans.ini',
-    'zh-hant.ini': 'https://raw.githubusercontent.com/5idereal/Aseprite-Traditional-Chinese-Translation/main/data/zh-hant.ini',
-    'ru.ini': 'https://raw.githubusercontent.com/lufog/aseprite-language-russian/main/russian-language/ru.ini',
-    'it.ini': 'https://raw.githubusercontent.com/FabianoIlCapo/aseprite_italian/master/data/it.ini',
+    'zh-hant.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-chinese-traditional/main/data/zh-hant.ini',
+    'ja.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-japanese/master/data/ja.ini',
+    'ko.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-korean/master/Korean/aseprite-language-ko/ko.ini',
+    'ru.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-russian/main/russian-language/ru.ini',
+    'it.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-italian/master/data/it.ini',
+    'fr.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-french/master/fr.ini',
 }
 
 
