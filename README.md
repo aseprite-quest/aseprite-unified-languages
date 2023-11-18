@@ -44,6 +44,6 @@
 
 ## License
 
-Translations are under the [Creative Commons Attribution 4.0 International License](data/LICENSE.txt).
+Translations under the Creative Commons Attribution 4.0 International License.
 
-Scripts are under the [MIT License](LICENSE).
+Scripts under the [MIT License](LICENSE).
