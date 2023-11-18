@@ -55,6 +55,12 @@
         "path": "./it.ini",
         "englishName": "Italian",
         "displayName": "italiano"
+      },
+      {
+        "id": "fr",
+        "path": "./fr.ini",
+        "englishName": "French",
+        "displayName": "Français"
       }
     ]
   }
