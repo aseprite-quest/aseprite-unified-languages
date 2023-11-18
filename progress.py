@@ -22,20 +22,24 @@ def main():
 
     info_lines = [
         '',
-        '| English Name | Display Name | File | Translated | Missing | Progress |',
-        '|---|---|---|---:|---:|---:|',
+        '| English Name | Display Name | Source | Mirror | Translated | Missing | Progress |',
+        '|---|---|---|---|---:|---:|---:|',
     ]
     for language in languages:
         english_name = language['englishName']
         display_name = language['displayName']
         file_name = language['path'].removeprefix('./')
+        source_repository = language['sourceRepository']
+        source_repository_url = f'https://github.com/{source_repository}'
+        mirror_repository = language['mirrorRepository']
+        mirror_repository_url = f'https://github.com/{mirror_repository}'
         strings_lang = Aseini.load(os.path.join(data_dir, file_name))
         logger.info("Load strings: '%s'", file_name)
         translated, total = strings_lang.coverage(strings_en)
         missing = total - translated
         progress = translated / total
         finished_emoji = '🚩' if progress == 1 else '🚧'
-        info_lines.append(f'| {english_name} | {display_name} | [{file_name}](data/{file_name}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
+        info_lines.append(f'| {english_name} | {display_name} | [Link]({source_repository_url}) | [Link]({mirror_repository_url}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
     info_lines.append('')
 
     readme_file_path = os.path.join(project_root_dir, 'README.md')

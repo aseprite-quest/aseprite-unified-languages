@@ -8,28 +8,15 @@
 
 ## Supported languages
 
-| English Name | Display Name | File | Translated | Missing | Progress |
-|---|---|---|---:|---:|---:|
-| Chinese (Simplified) | 中文（简体） | [zh-hans.ini](data/zh-hans.ini) | 1582 / 1612 | 30 | 98.14% 🚧 |
-| Chinese (Traditional) | 中文（繁體） | [zh-hant.ini](data/zh-hant.ini) | 1593 / 1612 | 19 | 98.82% 🚧 |
-| Japanese | 日本語 | [ja.ini](data/ja.ini) | 1194 / 1612 | 418 | 74.07% 🚧 |
-| Korean | 한국어 | [ko.ini](data/ko.ini) | 1194 / 1612 | 418 | 74.07% 🚧 |
-| Russian | Русский | [ru.ini](data/ru.ini) | 1611 / 1612 | 1 | 99.94% 🚧 |
-| Italian | italiano | [it.ini](data/it.ini) | 1593 / 1612 | 19 | 98.82% 🚧 |
-
-## Source repositories
-
-### Synchronous
-
-- [Chinese (Simplified)](https://github.com/aseprite-quest/aseprite-language-chinese-simplified)
-- [Chinese (Traditional)](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation)
-- [Russian](https://github.com/lufog/aseprite-language-russian)
-- [Italian](https://github.com/FabianoIlCapo/aseprite_italian)
-
-### Others
-
-- [Japanese](https://wikiwiki.jp/aseprite/日本語化ファイルのダウンロード)
-- [Korean](https://github.com/ImBada/Aseprite-Korean)
+| English Name | Display Name | Source | Mirror | Translated | Missing | Progress |
+|---|---|---|---|---:|---:|---:|
+| Chinese (Simplified) | 中文（简体） | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1582 / 1612 | 30 | 98.14% 🚧 |
+| Chinese (Traditional) | 中文（繁體） | [Link](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-traditional) | 1593 / 1612 | 19 | 98.82% 🚧 |
+| Japanese | 日本語 | [Link](https://github.com/aseprite-quest/aseprite-language-japanese) | [Link](https://github.com/aseprite-quest/aseprite-language-japanese) | 1194 / 1612 | 418 | 74.07% 🚧 |
+| Korean | 한국어 | [Link](https://github.com/ImBada/Aseprite-Korean) | [Link](https://github.com/aseprite-quest/aseprite-language-korean) | 1194 / 1612 | 418 | 74.07% 🚧 |
+| Russian | Русский | [Link](https://github.com/lufog/aseprite-language-russian) | [Link](https://github.com/aseprite-quest/aseprite-language-russian) | 1612 / 1612 | 0 | 100.00% 🚩 |
+| Italian | italiano | [Link](https://github.com/FabianoIlCapo/aseprite_italian) | [Link](https://github.com/aseprite-quest/aseprite-language-italian) | 1593 / 1612 | 19 | 98.82% 🚧 |
+| French | Français | [Link](https://github.com/boubl/Aseprite-French-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-french) | 1551 / 1612 | 61 | 96.22% 🚧 |
 
 ## Tools
 

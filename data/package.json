@@ -24,43 +24,57 @@
         "id": "zh-Hans",
         "path": "./zh-hans.ini",
         "englishName": "Chinese (Simplified)",
-        "displayName": "中文（简体）"
+        "displayName": "中文（简体）",
+        "sourceRepository": "aseprite-quest/aseprite-language-chinese-simplified",
+        "mirrorRepository": "aseprite-quest/aseprite-language-chinese-simplified"
       },
       {
         "id": "zh-Hant",
         "path": "./zh-hant.ini",
         "englishName": "Chinese (Traditional)",
-        "displayName": "中文（繁體）"
+        "displayName": "中文（繁體）",
+        "sourceRepository": "5idereal/Aseprite-Traditional-Chinese-Translation",
+        "mirrorRepository": "aseprite-quest/aseprite-language-chinese-traditional"
       },
       {
         "id": "ja",
         "path": "./ja.ini",
         "englishName": "Japanese",
-        "displayName": "日本語"
+        "displayName": "日本語",
+        "sourceRepository": "aseprite-quest/aseprite-language-japanese",
+        "mirrorRepository": "aseprite-quest/aseprite-language-japanese"
       },
       {
         "id": "ko",
         "path": "./ko.ini",
         "englishName": "Korean",
-        "displayName": "한국어"
+        "displayName": "한국어",
+        "sourceRepository": "ImBada/Aseprite-Korean",
+        "mirrorRepository": "aseprite-quest/aseprite-language-korean"
       },
       {
         "id": "ru",
         "path": "./ru.ini",
         "englishName": "Russian",
-        "displayName": "Русский"
+        "displayName": "Русский",
+        "sourceRepository": "lufog/aseprite-language-russian",
+        "mirrorRepository": "aseprite-quest/aseprite-language-russian"
       },
       {
         "id": "it",
         "path": "./it.ini",
         "englishName": "Italian",
-        "displayName": "italiano"
+        "displayName": "italiano",
+        "sourceRepository": "FabianoIlCapo/aseprite_italian",
+        "mirrorRepository": "aseprite-quest/aseprite-language-italian"
       },
       {
         "id": "fr",
         "path": "./fr.ini",
         "englishName": "French",
-        "displayName": "Français"
+        "displayName": "Français",
+        "sourceRepository": "boubl/Aseprite-French-Translation",
+        "mirrorRepository": "aseprite-quest/aseprite-language-french"
       }
     ]
   }
