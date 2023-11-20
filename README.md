@@ -10,7 +10,7 @@
 
 | English Name | Display Name | Source | Mirror | Translated | Missing | Progress |
 |---|---|---|---|---:|---:|---:|
-| Chinese (Simplified) | 中文（简体） | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1582 / 1612 | 30 | 98.14% 🚧 |
+| Chinese (Simplified) | 中文（简体） | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1612 / 1612 | 0 | 100.00% 🚩 |
 | Chinese (Traditional) | 中文（繁體） | [Link](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-traditional) | 1593 / 1612 | 19 | 98.82% 🚧 |
 | Japanese | 日本語 | [Link](https://github.com/aseprite-quest/aseprite-language-japanese) | [Link](https://github.com/aseprite-quest/aseprite-language-japanese) | 1194 / 1612 | 418 | 74.07% 🚧 |
 | Korean | 한국어 | [Link](https://github.com/ImBada/Aseprite-Korean) | [Link](https://github.com/aseprite-quest/aseprite-language-korean) | 1194 / 1612 | 418 | 74.07% 🚧 |
