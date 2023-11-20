@@ -75,6 +75,14 @@
         "displayName": "Français",
         "sourceRepository": "boubl/Aseprite-French-Translation",
         "mirrorRepository": "aseprite-quest/aseprite-language-french"
+      },
+      {
+        "id": "de",
+        "path": "./de.ini",
+        "englishName": "German",
+        "displayName": "Deutsch",
+        "sourceRepository": "dotheflopboy/Aseprite-German-Translation",
+        "mirrorRepository": "aseprite-quest/aseprite-language-german"
       }
     ]
   }

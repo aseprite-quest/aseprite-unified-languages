@@ -17,6 +17,7 @@
 | Russian | Русский | [Link](https://github.com/lufog/aseprite-language-russian) | [Link](https://github.com/aseprite-quest/aseprite-language-russian) | 1612 / 1612 | 0 | 100.00% 🚩 |
 | Italian | italiano | [Link](https://github.com/FabianoIlCapo/aseprite_italian) | [Link](https://github.com/aseprite-quest/aseprite-language-italian) | 1593 / 1612 | 19 | 98.82% 🚧 |
 | French | Français | [Link](https://github.com/boubl/Aseprite-French-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-french) | 1612 / 1612 | 0 | 100.00% 🚩 |
+| German | Deutsch | [Link](https://github.com/dotheflopboy/Aseprite-German-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-german) | 1155 / 1612 | 457 | 71.65% 🚧 |
 
 ## Tools
 

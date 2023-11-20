@@ -18,6 +18,7 @@ sync_configs = {
     'ru.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-russian/main/russian-language/ru.ini',
     'it.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-italian/master/data/it.ini',
     'fr.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-french/master/fr.ini',
+    'de.ini': 'https://raw.githubusercontent.com/aseprite-quest/aseprite-language-german/main/de.ini',
 }
 
 
