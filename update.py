@@ -18,6 +18,10 @@ def main():
     for language_config in language_configs:
         file_path = os.path.join(configs.data_dir, language_config.file_name)
         strings_lang = Aseini.load(file_path)
+        strings_lang.headers.clear()
+        strings_lang.headers.append(f'Aseprite - {language_config.english_name}')
+        for contributor in language_config.contributors:
+            strings_lang.headers.append(contributor.copyright_line)
         strings_lang.save(file_path, strings_en)
         logger.info("Update strings: '%s'", language_config.file_name)
 

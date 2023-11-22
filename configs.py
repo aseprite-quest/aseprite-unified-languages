@@ -22,6 +22,15 @@ class Contributor:
         self.email = config_data.get('email', None)
         self.copyright_year = config_data['copyright-year']
 
+    @property
+    def copyright_line(self) -> str:
+        copyright_line = f'Copyright (C) {self.copyright_year}  {self.name}'
+        if self.url is not None:
+            copyright_line += f' ({self.url})'
+        elif self.email is not None:
+            copyright_line += f' ({self.email})'
+        return copyright_line
+
 
 class LanguageConfig:
     @staticmethod
