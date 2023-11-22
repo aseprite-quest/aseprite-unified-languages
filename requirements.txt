@@ -1,1 +1,2 @@
 aseprite-ini==0.0.3
+PyYAML==6.0.1
