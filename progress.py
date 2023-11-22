@@ -1,48 +1,35 @@
-import json
 import logging
 import os
 
 from aseprite_ini import Aseini
 
+import configs
+
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger('progress')
 
-project_root_dir = os.path.dirname(__file__)
-strings_dir = os.path.join(project_root_dir, 'assets', 'strings')
-data_dir = os.path.join(project_root_dir, 'data')
-
 
 def main():
-    package_json_file_path = os.path.join(data_dir, 'package.json')
-    with open(package_json_file_path, 'r', encoding='utf-8') as file:
-        languages: list[dict[str, str]] = json.loads(file.read())['contributes']['languages']
-
-    strings_en = Aseini.load(os.path.join(strings_dir, 'en.ini'))
+    strings_en = Aseini.load(os.path.join(configs.strings_dir, 'en.ini'))
     logger.info("Load strings: 'en.ini'")
 
     info_lines = [
         '',
-        '| English Name | Display Name | Source | Mirror | Translated | Missing | Progress |',
+        '| English Name | Display Name | Source | Sync | Translated | Missing | Progress |',
         '|---|---|---|---|---:|---:|---:|',
     ]
-    for language in languages:
-        english_name = language['englishName']
-        display_name = language['displayName']
-        file_name = language['path'].removeprefix('./')
-        source_repository = language['sourceRepository']
-        source_repository_url = f'https://github.com/{source_repository}'
-        mirror_repository = language['mirrorRepository']
-        mirror_repository_url = f'https://github.com/{mirror_repository}'
-        strings_lang = Aseini.load(os.path.join(data_dir, file_name))
-        logger.info("Load strings: '%s'", file_name)
+    language_configs = configs.LanguageConfig.load()
+    for language_config in language_configs:
+        strings_lang = Aseini.load(os.path.join(configs.data_dir, language_config.file_name))
+        logger.info("Load strings: '%s'", language_config.file_name)
         translated, total = strings_lang.coverage(strings_en)
         missing = total - translated
         progress = translated / total
         finished_emoji = '🚩' if progress == 1 else '🚧'
-        info_lines.append(f'| {english_name} | {display_name} | [Link]({source_repository_url}) | [Link]({mirror_repository_url}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
+        info_lines.append(f'| {language_config.english_name} | {language_config.display_name} | [Link]({language_config.source_repository_url}) | [Link]({language_config.sync_repository_url}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
     info_lines.append('')
 
-    readme_file_path = os.path.join(project_root_dir, 'README.md')
+    readme_file_path = os.path.join(configs.project_root_dir, 'README.md')
     front_lines = []
     back_lines = []
     with open(readme_file_path, 'r', encoding='utf-8') as file:
