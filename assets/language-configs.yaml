@@ -1,0 +1,141 @@
+-
+  id: zh-Hans
+  english-name: Chinese (Simplified)
+  display-name: 中文（简体）
+  source-repository: aseprite-quest/aseprite-language-chinese-simplified
+  sync-repository: aseprite-quest/aseprite-language-chinese-simplified
+  sync-path: master/data/zh-hans.ini
+  contributors:
+    -
+      name: Just_Eleven
+      url: https://github.com/J-11
+      copyright-year: 2020
+    -
+      name: TakWolf
+      url: https://takwolf.com
+      copyright-year: 2023
+-
+  id: zh-Hant
+  english-name: Chinese (Traditional)
+  display-name: 中文（繁體）
+  source-repository: 5idereal/Aseprite-Traditional-Chinese-Translation
+  sync-repository: aseprite-quest/aseprite-language-chinese-traditional
+  sync-path: main/data/zh-hant.ini
+  contributors:
+    -
+      name: 5idereal
+      url: https://github.com/5idereal
+      copyright-year: 2021
+    -
+      name: TakWolf
+      url: https://takwolf.com
+      copyright-year: 2023
+-
+  id: ja
+  english-name: Japanese
+  display-name: 日本語
+  source-repository: aseprite-quest/aseprite-language-japanese
+  sync-repository: aseprite-quest/aseprite-language-japanese
+  sync-path: master/data/ja.ini
+  contributors:
+    -
+      name: Nejimaki Boy
+      url: https://twitter.com/nejimaki_boy
+      copyright-year: 2018
+    -
+      name: 棒助
+      url: https://twitter.com/Linear_Function
+      copyright-year: 2018
+    -
+      name: garbash
+      copyright-year: 2018
+    -
+      name: takaoka
+      copyright-year: 2018
+    -
+      name: 蛤うるふ
+      url: https://twitter.com/ulufu_ug
+      copyright-year: 2018
+    -
+      name: hako 生活
+      url: http://hakolife.net
+      copyright-year: 2018
+    -
+      name: sidedishes
+      copyright-year: 2018
+    -
+      name: 河澄
+      url: https://twitter.com/jade_hpy
+      copyright-year: 2018
+    -
+      name: picolet21
+      copyright-year: 2021
+    -
+      name: Cue:LAB
+      url: https://9lab.jp/
+      copyright-year: 2023
+-
+  id: ko
+  english-name: Korean
+  display-name: 한국어
+  source-repository: ImBada/Aseprite-Korean
+  sync-repository: aseprite-quest/aseprite-language-korean
+  sync-path: master/Korean/aseprite-language-ko/ko.ini
+  contributors:
+    -
+      name: Bada Im
+      url: https://github.com/ImBada
+      copyright-year: 2018
+    -
+      name: honnip
+      url: https://github.com/honnip
+      copyright-year: 2023
+-
+  id: ru
+  english-name: Russian
+  display-name: Русский
+  source-repository: lufog/aseprite-language-russian
+  sync-repository: aseprite-quest/aseprite-language-russian
+  sync-path: main/russian-language/ru.ini
+  contributors:
+    -
+      name: Aleksey Smirnov
+      url: https://github.com/lufog
+      email: debugger94@gmail.com
+      copyright-year: 2019
+-
+  id: it
+  english-name: Italian
+  display-name: italiano
+  source-repository: FabianoIlCapo/aseprite_italian
+  sync-repository: aseprite-quest/aseprite-language-italian
+  sync-path: master/data/it.ini
+  contributors:
+    -
+      name: Fabiano Caputo
+      url: https://community.aseprite.org/u/fabiano
+      copyright-year: 2023
+-
+  id: fr
+  english-name: French
+  display-name: Français
+  source-repository: boubl/Aseprite-French-Translation
+  sync-repository: aseprite-quest/aseprite-language-french
+  sync-path: master/fr.ini
+  contributors:
+    -
+      name: Boubli
+      url: https://github.com/boubl
+      copyright-year: 2020
+-
+  id: de
+  english-name: German
+  display-name: Deutsch
+  source-repository: dotheflopboy/Aseprite-German-Translation
+  sync-repository: aseprite-quest/aseprite-language-german
+  sync-path: main/de.ini
+  contributors:
+    -
+      name: Dotheflopboy
+      url: https://github.com/dotheflopboy
+      copyright-year: 2021
