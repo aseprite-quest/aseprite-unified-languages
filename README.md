@@ -8,7 +8,7 @@
 
 ## Supported languages
 
-| English Name | Display Name | Source | Mirror | Translated | Missing | Progress |
+| English Name | Display Name | Source | Sync | Translated | Missing | Progress |
 |---|---|---|---|---:|---:|---:|
 | Chinese (Simplified) | 中文（简体） | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1612 / 1612 | 0 | 100.00% 🚩 |
 | Chinese (Traditional) | 中文（繁體） | [Link](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-chinese-traditional) | 1593 / 1612 | 19 | 98.82% 🚧 |

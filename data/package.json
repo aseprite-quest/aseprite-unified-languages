@@ -9,8 +9,77 @@
   },
   "contributors": [
     {
+      "name": "Just_Eleven",
+      "url": "https://github.com/J-11"
+    },
+    {
       "name": "TakWolf",
       "url": "https://takwolf.com"
+    },
+    {
+      "name": "5idereal",
+      "url": "https://github.com/5idereal"
+    },
+    {
+      "name": "Nejimaki Boy",
+      "url": "https://twitter.com/nejimaki_boy"
+    },
+    {
+      "name": "棒助",
+      "url": "https://twitter.com/Linear_Function"
+    },
+    {
+      "name": "garbash"
+    },
+    {
+      "name": "takaoka"
+    },
+    {
+      "name": "蛤うるふ",
+      "url": "https://twitter.com/ulufu_ug"
+    },
+    {
+      "name": "hako 生活",
+      "url": "http://hakolife.net"
+    },
+    {
+      "name": "sidedishes"
+    },
+    {
+      "name": "河澄",
+      "url": "https://twitter.com/jade_hpy"
+    },
+    {
+      "name": "picolet21"
+    },
+    {
+      "name": "Cue:LAB",
+      "url": "https://9lab.jp/"
+    },
+    {
+      "name": "Bada Im",
+      "url": "https://github.com/ImBada"
+    },
+    {
+      "name": "honnip",
+      "url": "https://github.com/honnip"
+    },
+    {
+      "name": "Aleksey Smirnov",
+      "url": "https://github.com/lufog",
+      "email": "debugger94@gmail.com"
+    },
+    {
+      "name": "Fabiano Caputo",
+      "url": "https://community.aseprite.org/u/fabiano"
+    },
+    {
+      "name": "Boubli",
+      "url": "https://github.com/boubl"
+    },
+    {
+      "name": "Dotheflopboy",
+      "url": "https://github.com/dotheflopboy"
     }
   ],
   "publisher": "Aseprite Quest",
@@ -24,65 +93,49 @@
         "id": "zh-Hans",
         "path": "./zh-hans.ini",
         "englishName": "Chinese (Simplified)",
-        "displayName": "中文（简体）",
-        "sourceRepository": "aseprite-quest/aseprite-language-chinese-simplified",
-        "mirrorRepository": "aseprite-quest/aseprite-language-chinese-simplified"
+        "displayName": "中文（简体）"
       },
       {
         "id": "zh-Hant",
         "path": "./zh-hant.ini",
         "englishName": "Chinese (Traditional)",
-        "displayName": "中文（繁體）",
-        "sourceRepository": "5idereal/Aseprite-Traditional-Chinese-Translation",
-        "mirrorRepository": "aseprite-quest/aseprite-language-chinese-traditional"
+        "displayName": "中文（繁體）"
       },
       {
         "id": "ja",
         "path": "./ja.ini",
         "englishName": "Japanese",
-        "displayName": "日本語",
-        "sourceRepository": "aseprite-quest/aseprite-language-japanese",
-        "mirrorRepository": "aseprite-quest/aseprite-language-japanese"
+        "displayName": "日本語"
       },
       {
         "id": "ko",
         "path": "./ko.ini",
         "englishName": "Korean",
-        "displayName": "한국어",
-        "sourceRepository": "ImBada/Aseprite-Korean",
-        "mirrorRepository": "aseprite-quest/aseprite-language-korean"
+        "displayName": "한국어"
       },
       {
         "id": "ru",
         "path": "./ru.ini",
         "englishName": "Russian",
-        "displayName": "Русский",
-        "sourceRepository": "lufog/aseprite-language-russian",
-        "mirrorRepository": "aseprite-quest/aseprite-language-russian"
+        "displayName": "Русский"
       },
       {
         "id": "it",
         "path": "./it.ini",
         "englishName": "Italian",
-        "displayName": "italiano",
-        "sourceRepository": "FabianoIlCapo/aseprite_italian",
-        "mirrorRepository": "aseprite-quest/aseprite-language-italian"
+        "displayName": "italiano"
       },
       {
         "id": "fr",
         "path": "./fr.ini",
         "englishName": "French",
-        "displayName": "Français",
-        "sourceRepository": "boubl/Aseprite-French-Translation",
-        "mirrorRepository": "aseprite-quest/aseprite-language-french"
+        "displayName": "Français"
       },
       {
         "id": "de",
         "path": "./de.ini",
         "englishName": "German",
-        "displayName": "Deutsch",
-        "sourceRepository": "dotheflopboy/Aseprite-German-Translation",
-        "mirrorRepository": "aseprite-quest/aseprite-language-german"
+        "displayName": "Deutsch"
       }
     ]
   }
