@@ -4,7 +4,7 @@
 
 [Aseprite](https://github.com/aseprite/aseprite) extension to support multiple languages.
 
-![product](docs/product.png)
+![screenshot](docs/screenshot.png)
 
 ## Supported languages
 
