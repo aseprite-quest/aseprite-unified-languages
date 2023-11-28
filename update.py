@@ -10,7 +10,7 @@ logger = logging.getLogger('update')
 
 
 def main():
-    strings_en = Aseini.pull_strings('v1.3-rc9')
+    strings_en = Aseini.pull_strings('v1.3')
     strings_en.save(os.path.join(configs.strings_dir, 'en.ini'))
     logger.info("Update strings: 'en.ini'")
 
