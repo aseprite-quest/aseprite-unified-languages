@@ -16,7 +16,7 @@
 | Korean | 한국어 | [Link](https://github.com/ImBada/Aseprite-Korean) | [Link](https://github.com/aseprite-quest/aseprite-language-korean) | 1193 / 1613 | 420 | 73.96% 🚧 |
 | Russian | Русский | [Link](https://github.com/lufog/aseprite-language-russian) | [Link](https://github.com/aseprite-quest/aseprite-language-russian) | 1613 / 1613 | 0 | 100.00% 🚩 |
 | Italian | italiano | [Link](https://github.com/FabianoIlCapo/aseprite_italian) | [Link](https://github.com/aseprite-quest/aseprite-language-italian) | 1592 / 1613 | 21 | 98.70% 🚧 |
-| French | Français | [Link](https://github.com/boubl/Aseprite-French-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-french) | 1611 / 1613 | 2 | 99.88% 🚧 |
+| French | Français | [Link](https://github.com/boubl/Aseprite-French-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-french) | 1613 / 1613 | 0 | 100.00% 🚩 |
 | German | Deutsch | [Link](https://github.com/dotheflopboy/Aseprite-German-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-german) | 1154 / 1613 | 459 | 71.54% 🚧 |
 
 ## Tools
