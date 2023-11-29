@@ -80,6 +80,16 @@
     {
       "name": "Dotheflopboy",
       "url": "https://github.com/dotheflopboy"
+    },
+    {
+      "name": "Federico Perez",
+      "url": "https://www.latirus.com/",
+      "email": "support@latirus.com"
+    },
+    {
+      "name": "Javier Pizarro",
+      "url": "https://www.twitter.com/rax_draws",
+      "email": "chilegamer2016.javier@gmail.com"
     }
   ],
   "publisher": "Aseprite Quest",
@@ -136,6 +146,12 @@
         "path": "./de.ini",
         "englishName": "German",
         "displayName": "Deutsch"
+      },
+      {
+        "id": "es",
+        "path": "./es.ini",
+        "englishName": "Spanish",
+        "displayName": "español"
       }
     ]
   }

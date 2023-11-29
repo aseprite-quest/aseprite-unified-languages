@@ -139,3 +139,21 @@
       name: Dotheflopboy
       url: https://github.com/dotheflopboy
       copyright-year: 2021
+-
+  id: es
+  english-name: Spanish
+  display-name: español
+  source-repository: raxdraws/aseprite-spanish
+  sync-repository: aseprite-quest/aseprite-language-spanish
+  sync-path: main/src/es.ini
+  contributors:
+    -
+      name: Federico Perez
+      url: https://www.latirus.com/
+      email: support@latirus.com
+      copyright-year: 2021
+    -
+      name: Javier Pizarro
+      url: https://www.twitter.com/rax_draws
+      email: chilegamer2016.javier@gmail.com
+      copyright-year: 2022
