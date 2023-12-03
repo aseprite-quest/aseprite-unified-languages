@@ -68,3 +68,9 @@ class LanguageConfig:
     @property
     def sync_url(self) -> str:
         return f'https://raw.githubusercontent.com/{self.sync_repository}/{self.sync_path}'
+
+    def create_ini_headers(self) -> list[str]:
+        headers = [f'Aseprite - {self.english_name}']
+        for contributor in self.contributors:
+            headers.append(contributor.copyright_line)
+        return headers
