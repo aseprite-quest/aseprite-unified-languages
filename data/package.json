@@ -21,6 +21,19 @@
       "url": "https://github.com/5idereal"
     },
     {
+      "name": "Aleksey Smirnov",
+      "url": "https://github.com/lufog",
+      "email": "debugger94@gmail.com"
+    },
+    {
+      "name": "Fabiano Caputo",
+      "url": "https://community.aseprite.org/u/fabiano"
+    },
+    {
+      "name": "Boubli",
+      "url": "https://github.com/boubl"
+    },
+    {
       "name": "Nejimaki Boy",
       "url": "https://twitter.com/nejimaki_boy"
     },
@@ -65,19 +78,6 @@
       "url": "https://github.com/honnip"
     },
     {
-      "name": "Aleksey Smirnov",
-      "url": "https://github.com/lufog",
-      "email": "debugger94@gmail.com"
-    },
-    {
-      "name": "Fabiano Caputo",
-      "url": "https://community.aseprite.org/u/fabiano"
-    },
-    {
-      "name": "Boubli",
-      "url": "https://github.com/boubl"
-    },
-    {
       "name": "Dotheflopboy",
       "url": "https://github.com/dotheflopboy"
     },
@@ -112,18 +112,6 @@
         "displayName": "中文（繁體）"
       },
       {
-        "id": "ja",
-        "path": "./ja.ini",
-        "englishName": "Japanese",
-        "displayName": "日本語"
-      },
-      {
-        "id": "ko",
-        "path": "./ko.ini",
-        "englishName": "Korean",
-        "displayName": "한국어"
-      },
-      {
         "id": "ru",
         "path": "./ru.ini",
         "englishName": "Russian",
@@ -140,6 +128,18 @@
         "path": "./fr.ini",
         "englishName": "French",
         "displayName": "Français"
+      },
+      {
+        "id": "ja",
+        "path": "./ja.ini",
+        "englishName": "Japanese",
+        "displayName": "日本語"
+      },
+      {
+        "id": "ko",
+        "path": "./ko.ini",
+        "englishName": "Korean",
+        "displayName": "한국어"
       },
       {
         "id": "de",

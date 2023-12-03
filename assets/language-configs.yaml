@@ -31,6 +31,43 @@
       url: https://takwolf.com
       copyright-year: 2023
 -
+  id: ru
+  english-name: Russian
+  display-name: Русский
+  source-repository: lufog/aseprite-language-russian
+  sync-repository: aseprite-quest/aseprite-language-russian
+  sync-path: main/russian-language/ru.ini
+  contributors:
+    -
+      name: Aleksey Smirnov
+      url: https://github.com/lufog
+      email: debugger94@gmail.com
+      copyright-year: 2019
+-
+  id: it
+  english-name: Italian
+  display-name: italiano
+  source-repository: FabianoIlCapo/aseprite_italian
+  sync-repository: aseprite-quest/aseprite-language-italian
+  sync-path: master/data/it.ini
+  contributors:
+    -
+      name: Fabiano Caputo
+      url: https://community.aseprite.org/u/fabiano
+      copyright-year: 2023
+-
+  id: fr
+  english-name: French
+  display-name: Français
+  source-repository: boubl/Aseprite-French-Translation
+  sync-repository: aseprite-quest/aseprite-language-french
+  sync-path: master/fr.ini
+  contributors:
+    -
+      name: Boubli
+      url: https://github.com/boubl
+      copyright-year: 2020
+-
   id: ja
   english-name: Japanese
   display-name: 日本語
@@ -90,43 +127,6 @@
       name: honnip
       url: https://github.com/honnip
       copyright-year: 2023
--
-  id: ru
-  english-name: Russian
-  display-name: Русский
-  source-repository: lufog/aseprite-language-russian
-  sync-repository: aseprite-quest/aseprite-language-russian
-  sync-path: main/russian-language/ru.ini
-  contributors:
-    -
-      name: Aleksey Smirnov
-      url: https://github.com/lufog
-      email: debugger94@gmail.com
-      copyright-year: 2019
--
-  id: it
-  english-name: Italian
-  display-name: italiano
-  source-repository: FabianoIlCapo/aseprite_italian
-  sync-repository: aseprite-quest/aseprite-language-italian
-  sync-path: master/data/it.ini
-  contributors:
-    -
-      name: Fabiano Caputo
-      url: https://community.aseprite.org/u/fabiano
-      copyright-year: 2023
--
-  id: fr
-  english-name: French
-  display-name: Français
-  source-repository: boubl/Aseprite-French-Translation
-  sync-repository: aseprite-quest/aseprite-language-french
-  sync-path: master/fr.ini
-  contributors:
-    -
-      name: Boubli
-      url: https://github.com/boubl
-      copyright-year: 2020
 -
   id: de
   english-name: German
