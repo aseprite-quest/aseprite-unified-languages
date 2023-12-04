@@ -20,7 +20,7 @@
   display-name: 中文（繁體）
   source-repository: 5idereal/Aseprite-Traditional-Chinese-Translation
   sync-repository: aseprite-quest/aseprite-language-chinese-traditional
-  sync-path: main/data/zh-hant.ini
+  sync-path: complet-1.3-rc8/data/zh-hant.ini
   contributors:
     -
       name: 5idereal
@@ -145,7 +145,7 @@
   display-name: español
   source-repository: raxdraws/aseprite-spanish
   sync-repository: aseprite-quest/aseprite-language-spanish
-  sync-path: main/src/es.ini
+  sync-path: strings_typo/src/es.ini
   contributors:
     -
       name: Federico Perez
