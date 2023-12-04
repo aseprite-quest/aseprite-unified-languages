@@ -157,3 +157,16 @@
       url: https://www.twitter.com/rax_draws
       email: chilegamer2016.javier@gmail.com
       copyright-year: 2022
+-
+  id: uk
+  english-name: Ukrainian
+  display-name: українська
+  source-repository: Steenuga/aseprite-language-ukrainian
+  sync-repository: aseprite-quest/aseprite-language-ukrainian
+  sync-path: update-info/extensions/ukrainian-language/uk.ini
+  contributors:
+    -
+      name: Andrii Leibyk (steenuga)
+      url: https://github.com/Steenuga
+      email: smartysteenuga@gmail.com
+      copyright-year: 2023
