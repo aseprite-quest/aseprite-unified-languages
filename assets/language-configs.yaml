@@ -170,3 +170,16 @@
       url: https://github.com/Steenuga
       email: smartysteenuga@gmail.com
       copyright-year: 2023
+-
+  id: pl
+  english-name: Polish
+  display-name: polski
+  source-repository: PxSprite/aseprite-beta-pl
+  sync-repository: aseprite-quest/aseprite-language-polish
+  sync-path: update-info/extensions/aseprite-beta-pl/pl.ini
+  contributors:
+    -
+      name: PxSprite
+      url: https://github.com/PxSprite
+      email: pyroghost@tuta.io
+      copyright-year: 2022

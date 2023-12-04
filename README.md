@@ -20,6 +20,7 @@
 | German | Deutsch | [Link](https://github.com/dotheflopboy/Aseprite-German-Translation) | [Link](https://github.com/aseprite-quest/aseprite-language-german) | 1154 / 1613 | 459 | 71.54% 🚧 |
 | Spanish | español | [Link](https://github.com/raxdraws/aseprite-spanish) | [Link](https://github.com/aseprite-quest/aseprite-language-spanish) | 1187 / 1613 | 426 | 73.59% 🚧 |
 | Ukrainian | українська | [Link](https://github.com/Steenuga/aseprite-language-ukrainian) | [Link](https://github.com/aseprite-quest/aseprite-language-ukrainian) | 1283 / 1613 | 330 | 79.54% 🚧 |
+| Polish | polski | [Link](https://github.com/PxSprite/aseprite-beta-pl) | [Link](https://github.com/aseprite-quest/aseprite-language-polish) | 1283 / 1613 | 330 | 79.54% 🚧 |
 
 ## Tools
 
