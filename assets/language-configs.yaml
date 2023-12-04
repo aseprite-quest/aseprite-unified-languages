@@ -183,3 +183,15 @@
       url: https://github.com/PxSprite
       email: pyroghost@tuta.io
       copyright-year: 2022
+-
+  id: pt-BR
+  english-name: Portuguese (Brazil)
+  display-name: português (Brasil)
+  source-repository: puddiCria/aseprite-pt-br
+  sync-repository: aseprite-quest/aseprite-language-portuguese-brazil
+  sync-path: update-info/1.3 beta/pt-br.ini
+  contributors:
+    -
+      name: puddiCria
+      url: https://bit.ly/PuddinYT
+      copyright-year: 2021
