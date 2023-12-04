@@ -1,5 +1,6 @@
 import logging
 import os
+import random
 
 from aseprite_ini import Aseini
 
@@ -17,7 +18,7 @@ def main():
     language_configs = configs.LanguageConfig.load()
     for language_config in language_configs:
         file_path = os.path.join(configs.data_dir, language_config.file_name)
-        strings_lang = Aseini.pull_strings_by_url(language_config.sync_url)
+        strings_lang = Aseini.pull_strings_by_url(f'{language_config.sync_url}?t={random.random()}')
         strings_lang.headers = language_config.create_ini_headers()
         strings_lang.save(file_path, strings_en)
         logger.info("Update strings: '%s'", language_config.file_name)
