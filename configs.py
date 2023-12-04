@@ -44,6 +44,7 @@ class LanguageConfig:
         self.id: str = config_data['id']
         self.english_name: str = config_data['english-name']
         self.display_name: str = config_data['display-name']
+        self.maintenance_status: str = config_data['maintenance-status']
         self.source_repository: str = config_data['source-repository']
         self.sync_repository: str = config_data['sync-repository']
         self.sync_path: str = config_data['sync-path']
