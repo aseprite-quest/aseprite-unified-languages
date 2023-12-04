@@ -90,6 +90,16 @@
       "name": "Javier Pizarro",
       "url": "https://www.twitter.com/rax_draws",
       "email": "chilegamer2016.javier@gmail.com"
+    },
+    {
+      "name": "Andrii Leibyk (steenuga)",
+      "url": "https://github.com/Steenuga",
+      "email": "smartysteenuga@gmail.com"
+    },
+    {
+      "name": "PxSprite",
+      "url": "https://github.com/PxSprite",
+      "email": "pyroghost@tuta.io"
     }
   ],
   "publisher": "Aseprite Quest",
@@ -152,6 +162,18 @@
         "path": "./es.ini",
         "englishName": "Spanish",
         "displayName": "español"
+      },
+      {
+        "id": "uk",
+        "path": "./uk.ini",
+        "englishName": "Ukrainian",
+        "displayName": "українська"
+      },
+      {
+        "id": "pl",
+        "path": "./pl.ini",
+        "englishName": "Polish",
+        "displayName": "polski"
       }
     ]
   }
