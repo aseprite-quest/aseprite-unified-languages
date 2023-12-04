@@ -195,3 +195,15 @@
       name: puddiCria
       url: https://bit.ly/PuddinYT
       copyright-year: 2021
+-
+  id: mt
+  english-name: Maltese
+  display-name: Malti
+  source-repository: DimensionalSpace/Maltese-Aseprite
+  sync-repository: aseprite-quest/aseprite-language-maltese
+  sync-path: update-info/mt.ini
+  contributors:
+    -
+      name: Dimensional Space
+      url: https://github.com/DimensionalSpace
+      copyright-year: 2023

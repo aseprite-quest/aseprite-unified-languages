@@ -104,6 +104,10 @@
     {
       "name": "puddiCria",
       "url": "https://bit.ly/PuddinYT"
+    },
+    {
+      "name": "Dimensional Space",
+      "url": "https://github.com/DimensionalSpace"
     }
   ],
   "publisher": "Aseprite Quest",
@@ -184,6 +188,12 @@
         "path": "./pt-br.ini",
         "englishName": "Portuguese (Brazil)",
         "displayName": "português (Brasil)"
+      },
+      {
+        "id": "mt",
+        "path": "./mt.ini",
+        "englishName": "Maltese",
+        "displayName": "Malti"
       }
     ]
   }
