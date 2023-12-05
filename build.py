@@ -25,7 +25,7 @@ def _cleanup_dirs():
 def _make_package_json_single(language_config: configs.LanguageConfig, build_version: int):
     package_data = {
         'name': f'language-{language_config.name_id}',
-        'displayName': f'Language - {language_config.english_name}',
+        'displayName': language_config.english_name,
         'description': f'Aseprite Language Extension - {language_config.english_name}',
         'version': f'{configs.aseprite_version}-build-{build_version}',
         'author': {
