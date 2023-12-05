@@ -1,0 +1,57 @@
+{
+  "all": {
+    "build": 1
+  },
+  "zh-Hans": {
+    "build": 1,
+    "sha256": "6c5759fae34c0a5ab9f8461b7aeabdb2054fbc7e9719a4282c2d8a1ca53a9cf8"
+  },
+  "zh-Hant": {
+    "build": 1,
+    "sha256": "776f8a18e85f749e68275e24b09885e63adda992618be2c6c5a2387326a5fd7a"
+  },
+  "ru": {
+    "build": 1,
+    "sha256": "ca952ab776be3407a44ba296025a8307da87dec2fd6385c5b27435cb9117d8c8"
+  },
+  "it": {
+    "build": 1,
+    "sha256": "6ad7be788545137310be24d36772287cdaa4465f4bdaaf7870f89e8795b337ba"
+  },
+  "fr": {
+    "build": 1,
+    "sha256": "07e1ae66e77749bf33757ae311fb17d8130d128bf8345cdaf02ae36dfc9b1f07"
+  },
+  "ja": {
+    "build": 1,
+    "sha256": "f0694f95994e03137c2ed41d5ee0475f439ac5b54593ca21772fe2fe1fb75d83"
+  },
+  "ko": {
+    "build": 1,
+    "sha256": "3024278e6446c3ef83d9b41c2baf91e98a67f894f664b0e950d1223a09e4afff"
+  },
+  "de": {
+    "build": 1,
+    "sha256": "512a151efa478ea77048b83021b65f6e75a114096b9b175cef7b0dd272616f67"
+  },
+  "es": {
+    "build": 1,
+    "sha256": "91c5759fa11702b30d0b428abfd75a84d0f08ce0951541da7d84e7dbd162d081"
+  },
+  "uk": {
+    "build": 1,
+    "sha256": "777fc630832673135dc5a51343de7dab1c0aaa873afbe98d36336ef88ab685b3"
+  },
+  "pl": {
+    "build": 1,
+    "sha256": "2695669a78da19f798bdd5f548a6c08a094c5fcd1f2175fc8d6cc26127c4a7de"
+  },
+  "pt-BR": {
+    "build": 1,
+    "sha256": "6048bb9d1a1ec2b0b110c5d5693bc4285214a25888f9107c0e6222826a83f4ce"
+  },
+  "mt": {
+    "build": 1,
+    "sha256": "b17f7fbae16295b3040065870a00ba8a614d688006ee9ea1d27a90bede522a13"
+  }
+}

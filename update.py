@@ -1,3 +1,5 @@
+import hashlib
+import json
 import logging
 import os
 
@@ -14,6 +16,11 @@ def main():
     strings_en.save(os.path.join(configs.strings_dir, 'en.ini'))
     logger.info("Update strings: 'en.ini'")
 
+    versions_file_path = os.path.join(configs.assets_dir, 'language-versions.json')
+    with open(versions_file_path, 'r', encoding='utf-8') as file:
+        versions_data: dict = json.loads(file.read())
+    any_version_changed = False
+
     info_lines = [
         '| Language | Repository | Translated | Missing | Progress |',
         '|---|---|---:|---:|---:|',
@@ -27,11 +34,35 @@ def main():
         strings_lang.save(file_path, strings_en)
         logger.info("Update strings: '%s'", language_config.file_name)
 
+        sha256 = hashlib.sha256()
+        sha256.update(strings_lang.encode_str(strings_en).encode('utf-8'))
+        sha256_hex = sha256.hexdigest()
+        if language_config.id in versions_data:
+            version_data = versions_data[language_config.id]
+            if version_data['sha256'] != sha256_hex:
+                version_data['build'] += 1
+                version_data['sha256'] = sha256_hex
+                any_version_changed = True
+        else:
+            versions_data[language_config.id] = {
+                'build': 1,
+                'sha256': sha256_hex,
+            }
+            any_version_changed = True
+
         translated, total = strings_lang.coverage(strings_en)
         missing = total - translated
         progress = translated / total
         finished_emoji = '🚩' if progress == 1 else '🚧'
         info_lines.append(f'| {language_config.english_name} | [{language_config.source_repository}]({language_config.source_repository_url}) | {translated} / {total} | {missing} | {progress:.2%} {finished_emoji} |')
+
+    if any_version_changed:
+        versions_data['all']['build'] += 1
+
+    with open(versions_file_path, 'w', encoding='utf-8') as file:
+        file.write(json.dumps(versions_data, indent=2, ensure_ascii=False))
+        file.write('\n')
+    logger.info("Update: '%s'", versions_file_path)
 
     readme_file_path = os.path.join(configs.project_root_dir, 'README.md')
     front_lines = []
@@ -53,7 +84,7 @@ def main():
     with open(readme_file_path, 'w', encoding='utf-8') as file:
         file.write('\n'.join(front_lines + info_lines + behind_lines))
         file.write('\n')
-    logger.info("Update: 'README.md'")
+    logger.info("Update: '%s'", readme_file_path)
 
 
 if __name__ == '__main__':

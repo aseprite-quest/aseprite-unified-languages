@@ -14,12 +14,12 @@ def _cleanup_dirs():
     if os.path.exists(configs.outputs_dir):
         shutil.rmtree(configs.outputs_dir)
     os.makedirs(configs.outputs_dir)
-    logger.info(f"Cleanup dir: '{configs.outputs_dir}'")
+    logger.info("Cleanup dir: '%s'", configs.outputs_dir)
 
     if os.path.exists(configs.releases_dir):
         shutil.rmtree(configs.releases_dir)
     os.makedirs(configs.releases_dir)
-    logger.info(f"Cleanup dir: '{configs.releases_dir}'")
+    logger.info("Cleanup dir: '%s'", configs.releases_dir)
 
 
 def _make_package_json_single(language_config: configs.LanguageConfig, build_version: int):
@@ -62,7 +62,7 @@ def _make_package_json_single(language_config: configs.LanguageConfig, build_ver
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(json.dumps(package_data, indent=2, ensure_ascii=False))
         file.write('\n')
-    logger.info(f"Make package json: '{file_path}'")
+    logger.info("Make package json: '%s'", file_path)
 
 
 def _make_package_json_merged(language_configs: list[configs.LanguageConfig], build_version: int):
@@ -113,7 +113,7 @@ def _make_package_json_merged(language_configs: list[configs.LanguageConfig], bu
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(json.dumps(package_data, indent=2, ensure_ascii=False))
         file.write('\n')
-    logger.info(f"Make package json: '{file_path}'")
+    logger.info("Make package json: '%s'", file_path)
 
 
 def _make_extension_single(language_config: configs.LanguageConfig, build_version: int):
@@ -121,7 +121,7 @@ def _make_extension_single(language_config: configs.LanguageConfig, build_versio
     with zipfile.ZipFile(file_path, 'w') as file:
         file.write(os.path.join(configs.outputs_dir, f'package-{language_config.id.lower()}.json'), 'package.json')
         file.write(os.path.join(configs.data_dir, language_config.file_name), language_config.file_name)
-    logger.info(f"Make extension: '{file_path}'")
+    logger.info("Make extension: '%s'", file_path)
         
 
 def _make_extension_merged(language_configs: list[configs.LanguageConfig], build_version: int):
@@ -130,17 +130,24 @@ def _make_extension_merged(language_configs: list[configs.LanguageConfig], build
         file.write(os.path.join(configs.outputs_dir, 'package-all.json'), 'package.json')
         for language_config in language_configs:
             file.write(os.path.join(configs.data_dir, language_config.file_name), language_config.file_name)
-    logger.info(f"Make extension: '{file_path}'")
+    logger.info("Make extension: '%s'", file_path)
 
 
 def main():
     _cleanup_dirs()
+
+    versions_file_path = os.path.join(configs.assets_dir, 'language-versions.json')
+    with open(versions_file_path, 'r', encoding='utf-8') as file:
+        versions_data: dict = json.loads(file.read())
+
     language_configs = configs.LanguageConfig.load()
     for language_config in language_configs:
-        _make_package_json_single(language_config, 1)
-        _make_extension_single(language_config, 1)
-    _make_package_json_merged(language_configs, 1)
-    _make_extension_merged(language_configs, 1)
+        build_version = versions_data[language_config.id]['build']
+        _make_package_json_single(language_config, build_version)
+        _make_extension_single(language_config, build_version)
+    all_build_version = versions_data['all']['build']
+    _make_package_json_merged(language_configs, all_build_version)
+    _make_extension_merged(language_configs, all_build_version)
 
 
 if __name__ == '__main__':
