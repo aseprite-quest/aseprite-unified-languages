@@ -2,6 +2,8 @@ import os
 
 import yaml
 
+aseprite_version = '1.3.2'
+
 project_root_dir = os.path.abspath(os.path.dirname(__file__))
 assets_dir = os.path.join(project_root_dir, 'assets')
 strings_dir = os.path.join(assets_dir, 'strings')

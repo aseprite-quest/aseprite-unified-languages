@@ -22,12 +22,12 @@ def _cleanup_dirs():
     logger.info(f"Cleanup dir: '{configs.releases_dir}'")
 
 
-def _make_package_json_single(language_config: configs.LanguageConfig, version: str):
+def _make_package_json_single(language_config: configs.LanguageConfig, build_version: int):
     package_data = {
         'name': f'language-{language_config.name_id}',
         'displayName': f'Language - {language_config.english_name}',
         'description': f'Aseprite Language Extension - {language_config.english_name}',
-        'version': version,
+        'version': f'{configs.aseprite_version}-build-{build_version}',
         'author': {
             'name': 'Aseprite Quest',
             'url': 'https://github.com/aseprite-quest',
@@ -65,12 +65,12 @@ def _make_package_json_single(language_config: configs.LanguageConfig, version: 
     logger.info(f"Make package json: '{file_path}'")
 
 
-def _make_package_json_merged(language_configs: list[configs.LanguageConfig], version: str):
+def _make_package_json_merged(language_configs: list[configs.LanguageConfig], build_version: int):
     package_data = {
         'name': 'language-all',
         'displayName': 'Language - All',
         'description': 'Aseprite Language Extension - All',
-        'version': version,
+        'version': f'{configs.aseprite_version}-build-{build_version}',
         'author': {
             'name': 'Aseprite Quest',
             'url': 'https://github.com/aseprite-quest',
@@ -116,16 +116,16 @@ def _make_package_json_merged(language_configs: list[configs.LanguageConfig], ve
     logger.info(f"Make package json: '{file_path}'")
 
 
-def _make_extension_single(language_config: configs.LanguageConfig, version: str):
-    file_path = os.path.join(configs.releases_dir, f'language-{language_config.name_id}-v{version}.aseprite-extension')
+def _make_extension_single(language_config: configs.LanguageConfig, build_version: int):
+    file_path = os.path.join(configs.releases_dir, f'language-{language_config.name_id}-v{configs.aseprite_version}-build-{build_version}.aseprite-extension')
     with zipfile.ZipFile(file_path, 'w') as file:
         file.write(os.path.join(configs.outputs_dir, f'package-{language_config.id.lower()}.json'), 'package.json')
         file.write(os.path.join(configs.data_dir, language_config.file_name), language_config.file_name)
     logger.info(f"Make extension: '{file_path}'")
         
 
-def _make_extension_merged(language_configs: list[configs.LanguageConfig], version: str):
-    file_path = os.path.join(configs.releases_dir, f'language-all-v{version}.aseprite-extension')
+def _make_extension_merged(language_configs: list[configs.LanguageConfig], build_version: int):
+    file_path = os.path.join(configs.releases_dir, f'language-all-v{configs.aseprite_version}-build-{build_version}.aseprite-extension')
     with zipfile.ZipFile(file_path, 'w') as file:
         file.write(os.path.join(configs.outputs_dir, 'package-all.json'), 'package.json')
         for language_config in language_configs:
@@ -137,10 +137,10 @@ def main():
     _cleanup_dirs()
     language_configs = configs.LanguageConfig.load()
     for language_config in language_configs:
-        _make_package_json_single(language_config, '1.0.0')
-        _make_extension_single(language_config, '1.0.0')
-    _make_package_json_merged(language_configs, '1.0.0')
-    _make_extension_merged(language_configs, '1.0.0')
+        _make_package_json_single(language_config, 1)
+        _make_extension_single(language_config, 1)
+    _make_package_json_merged(language_configs, 1)
+    _make_extension_merged(language_configs, 1)
 
 
 if __name__ == '__main__':
