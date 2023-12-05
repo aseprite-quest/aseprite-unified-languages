@@ -8,7 +8,6 @@ strings_dir = os.path.join(assets_dir, 'strings')
 data_dir = os.path.join(project_root_dir, 'data')
 build_dir = os.path.join(project_root_dir, 'build')
 releases_dir = os.path.join(build_dir, 'releases')
-alphabets_dir = os.path.join(build_dir, 'alphabets')
 
 
 class Contributor:
