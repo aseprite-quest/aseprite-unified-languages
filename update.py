@@ -74,6 +74,8 @@ def main():
             if line == '## Supported languages':
                 current_lines.append(line)
                 current_lines.append('')
+                current_lines.append(f'Statistics as of version [v{configs.aseprite_version}](https://github.com/aseprite/aseprite/releases/tag/v{configs.aseprite_version})')
+                current_lines.append('')
                 current_lines = None
             elif current_lines is None and line.startswith('## '):
                 current_lines = behind_lines

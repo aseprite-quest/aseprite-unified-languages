@@ -6,6 +6,8 @@
 
 ## Supported languages
 
+Statistics as of version [v1.3.2](https://github.com/aseprite/aseprite/releases/tag/v1.3.2)
+
 | Language | Repository | Translated | Missing | Progress |
 |---|---|---:|---:|---:|
 | Chinese (Simplified) | [aseprite-quest/aseprite-language-chinese-simplified](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1613 / 1613 | 0 | 100.00% 🚩 |
