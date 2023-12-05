@@ -47,6 +47,7 @@ class LanguageConfig:
         self.maintenance_status: str = config_data['maintenance-status']
         self.source_repository: str = config_data['source-repository']
         self.sync_repository: str = config_data['sync-repository']
+        self.sync_branch: str = config_data['sync-branch']
         self.sync_path: str = config_data['sync-path']
         self.contributors = Contributor.parse(config_data['contributors'])
 
@@ -68,7 +69,7 @@ class LanguageConfig:
 
     @property
     def sync_url(self) -> str:
-        return f'https://raw.githubusercontent.com/{self.sync_repository}/{self.sync_path}'
+        return f'https://raw.githubusercontent.com/{self.sync_repository}/{self.sync_branch}/{self.sync_path}'
 
     def create_ini_headers(self) -> list[str]:
         headers = [f'Aseprite - {self.english_name}']
