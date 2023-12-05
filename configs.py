@@ -58,6 +58,10 @@ class LanguageConfig:
         return headers
 
     @property
+    def name_id(self) -> str:
+        return self.english_name.lower().replace('(', '').replace(')', '').replace(' ', '-')
+
+    @property
     def file_name(self) -> str:
         return f'{self.id.lower()}.ini'
 
