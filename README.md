@@ -2,9 +2,7 @@
 
 [![Releases](https://img.shields.io/github/v/release/aseprite-quest/aseprite-unified-languages)](https://github.com/aseprite-quest/aseprite-unified-languages/releases)
 
-[Aseprite](https://github.com/aseprite/aseprite) extension to support multiple languages.
-
-![screenshot](docs/screenshot.png)
+[Aseprite](https://github.com/aseprite/aseprite) language package collection.
 
 ## Supported languages
 
