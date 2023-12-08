@@ -12,7 +12,7 @@ logger = logging.getLogger('update')
 
 
 def main():
-    strings_en = Aseini.pull_strings(f'v{configs.aseprite_version}')
+    strings_en = Aseini.pull_strings('main')
     strings_en.save(os.path.join(configs.strings_dir, 'en.ini'))
     logger.info("Update strings: 'en.ini'")
 
@@ -31,6 +31,9 @@ def main():
         file_path = os.path.join(configs.data_dir, language_config.file_name)
         strings_lang = Aseini.pull_strings_by_url(language_config.sync_url)
         strings_lang.headers = language_config.create_ini_headers()
+        if '_' not in strings_lang:
+            strings_lang['_'] = {}
+        strings_lang['_']['display_name'] = language_config.display_name
         strings_lang.save(file_path, strings_en)
         logger.info("Update strings: '%s'", language_config.file_name)
 

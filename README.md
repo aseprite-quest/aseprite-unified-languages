@@ -10,19 +10,19 @@ Statistics as of version [v1.3.2](https://github.com/aseprite/aseprite/releases/
 
 | Language | Repository | Translated | Missing | Progress |
 |---|---|---:|---:|---:|
-| Chinese (Simplified) | [aseprite-quest/aseprite-language-chinese-simplified](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1613 / 1613 | 0 | 100.00% 🚩 |
-| Chinese (Traditional) | [5idereal/Aseprite-Traditional-Chinese-Translation](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation) | 1613 / 1613 | 0 | 100.00% 🚩 |
-| Russian | [lufog/aseprite-language-russian](https://github.com/lufog/aseprite-language-russian) | 1613 / 1613 | 0 | 100.00% 🚩 |
-| Italian | [FabianoIlCapo/aseprite_italian](https://github.com/FabianoIlCapo/aseprite_italian) | 1593 / 1613 | 20 | 98.76% 🚧 |
-| French | [boubl/Aseprite-French-Translation](https://github.com/boubl/Aseprite-French-Translation) | 1613 / 1613 | 0 | 100.00% 🚩 |
-| Japanese | [aseprite-quest/aseprite-language-japanese](https://github.com/aseprite-quest/aseprite-language-japanese) | 1194 / 1613 | 419 | 74.02% 🚧 |
-| Korean | [ImBada/Aseprite-Korean](https://github.com/ImBada/Aseprite-Korean) | 1193 / 1613 | 420 | 73.96% 🚧 |
-| German | [dotheflopboy/Aseprite-German-Translation](https://github.com/dotheflopboy/Aseprite-German-Translation) | 1154 / 1613 | 459 | 71.54% 🚧 |
-| Spanish | [raxdraws/aseprite-spanish](https://github.com/raxdraws/aseprite-spanish) | 1187 / 1613 | 426 | 73.59% 🚧 |
-| Ukrainian | [Steenuga/aseprite-language-ukrainian](https://github.com/Steenuga/aseprite-language-ukrainian) | 1283 / 1613 | 330 | 79.54% 🚧 |
-| Polish | [PxSprite/aseprite-beta-pl](https://github.com/PxSprite/aseprite-beta-pl) | 1283 / 1613 | 330 | 79.54% 🚧 |
-| Portuguese (Brazil) | [puddiCria/aseprite-pt-br](https://github.com/puddiCria/aseprite-pt-br) | 1239 / 1613 | 374 | 76.81% 🚧 |
-| Maltese | [DimensionalSpace/Maltese-Aseprite](https://github.com/DimensionalSpace/Maltese-Aseprite) | 1539 / 1613 | 74 | 95.41% 🚧 |
+| Chinese (Simplified) | [aseprite-quest/aseprite-language-chinese-simplified](https://github.com/aseprite-quest/aseprite-language-chinese-simplified) | 1614 / 1614 | 0 | 100.00% 🚩 |
+| Chinese (Traditional) | [5idereal/Aseprite-Traditional-Chinese-Translation](https://github.com/5idereal/Aseprite-Traditional-Chinese-Translation) | 1614 / 1614 | 0 | 100.00% 🚩 |
+| Russian | [lufog/aseprite-language-russian](https://github.com/lufog/aseprite-language-russian) | 1614 / 1614 | 0 | 100.00% 🚩 |
+| Italian | [FabianoIlCapo/aseprite_italian](https://github.com/FabianoIlCapo/aseprite_italian) | 1594 / 1614 | 20 | 98.76% 🚧 |
+| French | [boubl/Aseprite-French-Translation](https://github.com/boubl/Aseprite-French-Translation) | 1614 / 1614 | 0 | 100.00% 🚩 |
+| Japanese | [aseprite-quest/aseprite-language-japanese](https://github.com/aseprite-quest/aseprite-language-japanese) | 1195 / 1614 | 419 | 74.04% 🚧 |
+| Korean | [ImBada/Aseprite-Korean](https://github.com/ImBada/Aseprite-Korean) | 1194 / 1614 | 420 | 73.98% 🚧 |
+| German | [dotheflopboy/Aseprite-German-Translation](https://github.com/dotheflopboy/Aseprite-German-Translation) | 1155 / 1614 | 459 | 71.56% 🚧 |
+| Spanish | [raxdraws/aseprite-spanish](https://github.com/raxdraws/aseprite-spanish) | 1188 / 1614 | 426 | 73.61% 🚧 |
+| Ukrainian | [Steenuga/aseprite-language-ukrainian](https://github.com/Steenuga/aseprite-language-ukrainian) | 1284 / 1614 | 330 | 79.55% 🚧 |
+| Polish | [PxSprite/aseprite-beta-pl](https://github.com/PxSprite/aseprite-beta-pl) | 1284 / 1614 | 330 | 79.55% 🚧 |
+| Portuguese (Brazil) | [puddiCria/aseprite-pt-br](https://github.com/puddiCria/aseprite-pt-br) | 1240 / 1614 | 374 | 76.83% 🚧 |
+| Maltese | [DimensionalSpace/Maltese-Aseprite](https://github.com/DimensionalSpace/Maltese-Aseprite) | 1540 / 1614 | 74 | 95.42% 🚧 |
 
 ## Other packages
 

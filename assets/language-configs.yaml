@@ -23,7 +23,7 @@
   maintenance-status: Positive
   source-repository: 5idereal/Aseprite-Traditional-Chinese-Translation
   sync-repository: aseprite-quest/aseprite-language-chinese-traditional
-  sync-branch: complet-1.3-rc8
+  sync-branch: to-weblate
   sync-path: data/zh-hant.ini
   contributors:
     -
@@ -52,11 +52,11 @@
 -
   id: it
   english-name: Italian
-  display-name: italiano
+  display-name: Italiano
   maintenance-status: Positive
   source-repository: FabianoIlCapo/aseprite_italian
   sync-repository: aseprite-quest/aseprite-language-italian
-  sync-branch: master
+  sync-branch: to-weblate
   sync-path: data/it.ini
   contributors:
     -
@@ -158,7 +158,7 @@
 -
   id: es
   english-name: Spanish
-  display-name: español
+  display-name: Español
   maintenance-status: Inactive
   source-repository: raxdraws/aseprite-spanish
   sync-repository: aseprite-quest/aseprite-language-spanish
@@ -178,7 +178,7 @@
 -
   id: uk
   english-name: Ukrainian
-  display-name: українська
+  display-name: Українська
   maintenance-status: Inactive
   source-repository: Steenuga/aseprite-language-ukrainian
   sync-repository: aseprite-quest/aseprite-language-ukrainian
@@ -193,7 +193,7 @@
 -
   id: pl
   english-name: Polish
-  display-name: polski
+  display-name: Polski
   maintenance-status: Inactive
   source-repository: PxSprite/aseprite-beta-pl
   sync-repository: aseprite-quest/aseprite-language-polish
@@ -208,7 +208,7 @@
 -
   id: pt-BR
   english-name: Portuguese (Brazil)
-  display-name: português (Brasil)
+  display-name: Português (Brasil)
   maintenance-status: Inactive
   source-repository: puddiCria/aseprite-pt-br
   sync-repository: aseprite-quest/aseprite-language-portuguese-brazil

@@ -1,2 +1,2 @@
-aseprite-ini==0.0.3
+aseprite-ini==0.0.4
 PyYAML==6.0.1
