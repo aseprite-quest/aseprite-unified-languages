@@ -1,3 +1,7 @@
+# Deprecated
+
+Aseprite translation has been moved to [Weblate/Aseprite](https://hosted.weblate.org/projects/aseprite/), this library is no longer meaningful.
+
 # Aseprite Unified Languages
 
 [![Releases](https://img.shields.io/github/v/release/aseprite-quest/aseprite-unified-languages)](https://github.com/aseprite-quest/aseprite-unified-languages/releases)
